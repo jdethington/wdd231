@@ -38,9 +38,9 @@ header {
 
 header img {
     display: block;
-    width: 100%;
+    width: 1.2rem;
     height: auto;
-    padding-bottom: 5px;
+    padding: 5px 0;
 }
 
 header span {
@@ -140,7 +140,7 @@ h2 {
 }
 
 .certificate p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     padding: 10px;
     text-align: center;
     font-size: small;

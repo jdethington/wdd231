@@ -52,6 +52,10 @@
         grid-column: span 3;
     }
 
+    .certificate p {
+        font-size: 1rem;
+    }
+
     .course-grid {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
