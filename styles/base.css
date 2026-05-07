@@ -22,7 +22,7 @@
 
     --hover: #FFA600;
     --hover-light: #FFA6007F;
-    --wayfinding: #eee;
+    --wayFinding: #eee;
 }
 
 
@@ -77,8 +77,6 @@ header span {
 
 .navigation ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 .navigation a {
@@ -90,7 +88,7 @@ header span {
 }
 
 .navigation li.current {
-    background-color: var(--wayfinding);
+    background-color: var(--wayFinding);
 }
 
 .navigation a:hover {
@@ -108,7 +106,6 @@ section {
 }
 
 h2 {
-    margin: 0;
     padding: 1rem 0;
     display: grid;
     justify-items: center;
@@ -116,12 +113,13 @@ h2 {
     color: var(--font-color-light);
 }
 
+/* ---------- About ---------- */
 .about p {
-    margin: 0;
     padding: 10px;
     background-color: var(--background-color-light);
 }
 
+/* ---------- photo ---------- */
 .photo div {
     padding: 15px;
     background-color: var(--background-color-light);
@@ -136,6 +134,10 @@ h2 {
     border-radius: 8px;
 }
 
+/* ---------- Certificate ---------- */
+.course-selected {
+    background-color: var(--background-color-light);
+}
 
 .certificate p {
     font-size: 1rem;
@@ -147,18 +149,19 @@ h2 {
     font-size: 1.5rem;
     padding: 10px;
     display: grid;
-    grid-auto-flow: column;
-    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
 }
 
 .course-button button {
-    background-color: var(--background-color-light);
+    /* background-color: var(--background-color-light); */
     border-radius: 8px;
     padding: .5rem;
 }
 
 .course-button button:hover {
     cursor: pointer;
+    background-color: var(--hover-light);
 }
 
 .course-grid {
@@ -173,7 +176,7 @@ h2 {
     border-radius: 4px;
 }
 
-.certificate span {
+.certificate p {
     font-size: small;
 }
 
@@ -211,5 +214,4 @@ footer {
 .date {
     background-color: var(--background-color-light);
     padding: 1rem 0;
-    margin: 0;
 }

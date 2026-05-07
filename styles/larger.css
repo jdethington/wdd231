@@ -1,5 +1,6 @@
 @media only screen and (min-width: 38rem) {
-/* 38rem == 609px */
+
+    /* 38rem == 609px */
     header,
     main,
     nav,
@@ -8,14 +9,17 @@
         margin: 0 auto;
     }
 
+    /* ******************** HEADER ******************** */
     header {
         grid-template-columns: 24px auto;
     }
 
+    /* ******************** HAMBURGER ******************** */
     .hamburger {
         display: none;
     }
 
+    /* ******************** NAVIGATION ******************** */
     .navigation {
         display: block;
         border-bottom: solid 1px #eee;
@@ -28,4 +32,30 @@
     .navigation a {
         border: none;
     }
+
+    /* ******************** MAIN ******************** */
+    main {
+        grid-template-columns: 33% 33% 34%;
+    }
+
+    main h1 {
+        grid-column: span 3;
+    }
+
+    .about {
+        grid-column: span 2;
+        display: grid;
+        grid-template-rows: 3.75rem 1fr;
+    }
+
+    .certificate {
+        grid-column: span 3;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    /* ******************** FOOTER ******************** */
 }

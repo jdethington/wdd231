@@ -79,9 +79,20 @@ const courses = [
     }
 ]
 
-//  --------------------  Course filters ------------------------
 createCourseCard(courses);
 
+//  --------------------  Course Selected ------------------------
+const courseButton = document.querySelector('.course-button');
+courseButton.addEventListener('click', (e) => {
+    const button = e.target.closest('button');
+    if (!button) return;
+    courseButton.querySelectorAll('button').forEach(btn => {
+        btn.classList.remove('course-selected');
+    });
+    button.classList.add('course-selected');
+});
+
+//  --------------------  Course filters ------------------------
 const allCourses = document.querySelector("#all");
 allCourses.addEventListener('click', () => {
     createCourseCard(courses);
@@ -99,14 +110,22 @@ wddCourses.addEventListener('click', () => {
 
 function createCourseCard(filteredCourses) {
     document.querySelector('.course-grid').innerHTML = "";
+
     filteredCourses.forEach(course => {
         const card = document.createElement('button');
 
-        card.innerHTML = `${course.subject} ${course.number}`;
-
+        //  ---------- add check if completed course --------------
+        if (course.completed) {
+            card.innerHTML = `&#10004; ${course.subject} ${course.number}`;
+        }
+        else {
+            card.innerHTML = `${course.subject} ${course.number}`;
+        }
+        //  --------------------  add button ------------------------
         document.querySelector('.course-grid').appendChild(card);
     });
+    //  --------------------  total credits for listed courses ------------------------
     const totalCredits = filteredCourses.reduce((total, num) => total + num.credits, 0);
     const credits = document.querySelector('#credits');
-    credits.innerHTML = `The total credits for course listed above is ${totalCredits}`;
+    credits.innerHTML = ` ${totalCredits}`;
 }
