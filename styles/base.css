@@ -143,6 +143,7 @@ h2 {
     font-size: 1rem;
     padding: 10px;
     text-align: center;
+    font-size: small;
 }
 
 .course-button {
@@ -174,10 +175,6 @@ h2 {
     background-color: var(--background-color-light);
     border: none;
     border-radius: 4px;
-}
-
-.certificate p {
-    font-size: small;
 }
 
 /* ******************** FOOTER ******************** */
