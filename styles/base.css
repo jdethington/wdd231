@@ -1,6 +1,8 @@
 /* ---------- COLOR SCHEME ----------
     terra cotta #E07A5F
-    deep slate blue #3D405B */
+    deep slate blue #3D405B 
+    cheese orange #FFA600
+        */
 
 /* ******************** SITE WIDE ******************** */
 * {
@@ -76,22 +78,62 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: #E07A5F;
+    background-color: #ffa6007f;
 }
 
 /* ******************** MAIN ******************** */
-h1 {
-    margin-left: 10px;
+main {
+    display: grid;
+}
+
+h1,
+section {
+    margin: 10px;
+}
+
+section {
+    border: dashed 1px red;
+    /* display: grid; */
+}
+
+h2 {
+    margin: 0;
+    padding: 1rem 0;
+    display: grid;
+    justify-items: center;
+    background-color: #333;
+    color: #ddd;
+}
+
+.about p {
+    margin: 0;
+    padding: 10px;
+    background-color: #ccc;
+}
+
+.photo div {
+    padding: 15px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 417px;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* ******************** FOOTER ******************** */
 footer {
-    background-color: #eee;
-    padding: 1rem 10px;
+    /* background-color: #eee; */
+    padding: 1rem 0;
     text-align: center;
 }
 
 .social {
+    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
     column-gap: 8px;
@@ -108,11 +150,14 @@ footer {
 }
 
 .social img {
-    width: 22px;
-    height: 22px;
-    /* border: dashed 1px #ccc; */
+    width: 33px;
+    height: 33px;
 }
 
 .social a:hover {
-    background-color: #ddd;
+    background-color: #ffa6007f;
+}
+
+.date {
+    margin: 0;
 }

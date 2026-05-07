@@ -17,13 +17,16 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <!-- <script src="scripts/course.js" defer></script> -->
+    <script type="module" src="scripts/course.js"></script>
 
 </head>
 
 <body>
     <header>
         <img src="images/cheese.svg" alt="site logo" width="24" height="24">
-        <span>WDD 321</span>
+        <span>Jacob Ethington</span>
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
     <nav id="nav-bar" class="navigation">
@@ -35,31 +38,39 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <section>
+        <section class="about">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti alias perferendis veritatis repudiandae
                 libero ex odio unde accusantium, tenetur vero beatae modi. Odit consectetur veniam id sequi unde quasi
                 earum.</p>
         </section>
-        <section>
+        <section class="photo">
             <h2>Student Photo</h2>
-            <img src="images/profile.jpg" alt="Jacob">
+            <div><img src="images/profile.jpg" alt="Jacob" loading="lazy">
+            </div>
         </section>
-        <section>
+        <section class="certificate">
             <h2>Web Certificate Courses</h2>
-
+            <div>
+                <button href="#" id="all">All</button>
+                <button href="#" id="cse">CSE</button>
+                <button href="#" id="wdd">WDD</button>
+            </div>
+            <div class="course-grid"></div>
         </section>
     </main>
     <footer>
         <div class="social">
+            <a href="#" target="_blank"><img src="images/socialmedia/github.svg" alt="github" class="socialImg"></a>
+            <a href="#" target="_blank"><img src="images/socialmedia/linkedin.svg" alt="linkedin"></a>
             <a href="#" target="_blank"><img src="images/socialmedia/facebook.svg" alt="facebook"></a>
             <a href="#" target="_blank"><img src="images/socialmedia/twitter-x.svg" alt="twitter-X"></a>
             <a href="#" target="_blank"><img src="images/socialmedia/youtube.svg" alt="youtube"></a>
-            <a href="#" target="_blank"><img src="images/socialmedia/github.svg" alt="github"></a>
-            <a href="#" target="_blank"><img src="images/socialmedia/linkedin.svg" alt="linkedin"></a>
         </div>
-        <p>copyright symbol and current year</p>
-        <p>last modified</p>
+        <section class="date">
+            <p><span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona, USA</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </section>
     </footer>
 
 </body>
