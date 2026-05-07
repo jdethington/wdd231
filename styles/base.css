@@ -136,11 +136,6 @@ h2 {
     border-radius: 8px;
 }
 
-.certificate {
-    /* border: dashed 1px red; */
-    /* display: grid; */
-    /* justify-content: center; */
-}
 
 .certificate p {
     font-size: 1rem;
@@ -157,8 +152,9 @@ h2 {
 }
 
 .course-button button {
-    /* background-color: --font-color-dark; */
+    background-color: var(--background-color-light);
     border-radius: 8px;
+    padding: .5rem;
 }
 
 .course-button button:hover {
@@ -171,10 +167,14 @@ h2 {
 }
 
 .course-grid button {
-    padding: .5rem;
+    padding: .82rem;
     background-color: var(--background-color-light);
     border: none;
     border-radius: 4px;
+}
+
+.certificate span {
+    font-size: small;
 }
 
 /* ******************** FOOTER ******************** */
