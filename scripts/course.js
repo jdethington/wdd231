@@ -100,10 +100,13 @@ wddCourses.addEventListener('click', () => {
 function createCourseCard(filteredCourses) {
     document.querySelector('.course-grid').innerHTML = "";
     filteredCourses.forEach(course => {
-        let card = document.createElement('button');
+        const card = document.createElement('button');
 
         card.innerHTML = `${course.subject} ${course.number}`;
 
         document.querySelector('.course-grid').appendChild(card);
     });
+    const totalCredits = filteredCourses.reduce((total, num) => total + num.credits, 0);
+    const credits = document.querySelector('#credits');
+    credits.innerHTML = `The total credits for course listed above is ${totalCredits}`;
 }
