@@ -1,0 +1,18 @@
+{
+    "family name": "Ethington",
+    "move_in_date": "2019-04-19",
+    "number_of_people": 2,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Jacob Ethington",
+            "gender": "male",
+            "birthdate": "1975-12-06"
+        },
+        {
+            "name": "Sandi Ethington",
+            "gender": "female",
+            "birthdate": "1977-04-22"
+        }
+    ]
+}
