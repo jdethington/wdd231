@@ -1,4 +1,4 @@
-const info = 'data/member.json';
+const info = 'data/members.json';
 const cards = document.querySelector('#cards');
 const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
@@ -62,11 +62,11 @@ const displayCompanies = (companies) => {
         cardInfo.appendChild(number);
         cardInfo.appendChild(url);
         cardInfo.appendChild(membership);
-        
+
         // div class="bottom"
         cardBottom.appendChild(cardName);
         cardBottom.appendChild(cardInfo);
-        
+
         card.appendChild(cardImage);
         card.appendChild(cardBottom);
 
