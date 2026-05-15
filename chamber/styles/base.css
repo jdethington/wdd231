@@ -36,7 +36,8 @@ footer {
 /* ******************** HAMBURGER ******************** */
 header div {
     display: grid;
-    grid-template-columns: 107px auto 44px;
+    grid-template-columns: 44px minmax(216px, auto) 44px;
+    /* grid-template-columns: 44px auto 44px; */
     align-items: center;
     padding: 1rem 0 1rem 1rem;
 }
@@ -139,7 +140,7 @@ a {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
+    margin: 0 15px;
 }
 
 .grid section {
