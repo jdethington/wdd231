@@ -1,15 +1,6 @@
 {
     "companies": [
         {
-            "name": "Gilbert Veterinary Hospital",
-            "address": "1655 S. Gilbert Rd",
-            "phoneNumber": "(480)963-1815",
-            "url": "https://gilbertvet.com/",
-            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/1219/26116332_1367600603386298_6759832103366094467_o.jpg",
-            "membership": "1",
-            "other": ""
-        },
-        {
             "name": "Club Pilates",
             "address": "3546 S. Power Rd., Ste 104  Gilbert AZ 85234",
             "phoneNumber": "(480) 571-6866",
@@ -52,6 +43,15 @@
             "url": "http://www.citylifestyle.com/gilbert",
             "image": "https://chambermaster.blob.core.windows.net/images/members/1886/21732/MemLogoSearch_Gilbert%20City%20Lifestyle.png",
             "membership": "3",
+            "other": ""
+        },
+        {
+            "name": "Gilbert Veterinary Hospital",
+            "address": "1655 S. Gilbert Rd",
+            "phoneNumber": "(480)963-1815",
+            "url": "https://gilbertvet.com/",
+            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/1219/26116332_1367600603386298_6759832103366094467_o.jpg",
+            "membership": "1",
             "other": ""
         },
         {
