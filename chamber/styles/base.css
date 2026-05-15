@@ -1,7 +1,7 @@
 /* ---------- COLOR SCHEME ----------
     Primary Color: __________;
     Secondary Color: __________;#242938
-    Background Color: __________; #005BA7#F19830#131626
+    Background Color: __________; #005BA7 #F19830 #131626
     Text Color: __________;
     Font Family: "Roboto", sans-serif;
 */
@@ -37,7 +37,6 @@ footer {
 header div {
     display: grid;
     grid-template-columns: 107px auto 44px;
-    /* grid-template-columns: auto auto auto; */
     align-items: center;
     padding: 1rem 0 1rem 1rem;
 }
@@ -130,10 +129,14 @@ h2 {
 p,
 a {
     font-size: small;
-    /* font-size: medium; */
-    /* font-size: 14px; */
     text-decoration: none;
     color: var(--font-color-dark);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* -------------------- GRID* -------------------- */
@@ -155,57 +158,28 @@ a {
     }
 
     .bottom {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .address::before {
         content: "📍 ";
-        /* content: "\f3c5"; */
     }
 
     .number::before {
-        /* content: "\f095"; */
-        /* content: "&#xf095"; */
         content: "\01f4de";
-        /* content: "📞 "; */
     }
 
     .url::before {
-        /* content: "\f0ac"; */
         content: "\01f310";
-        /* content: "🌐 "; */
     }
 
-    /* h2 {
-        color: #3D405B;
-        font-size: larger;
-        padding: .5rem;
-    }
-
-    p,
-    a {
-        font-size: small;
-    }
-
-    .address::before {
-        content: "📍 ";
-    }
-
-    .number::before {
-        content: "📞 ";
-    }
-
-    .url::before {
-        content: "🌐 ";
-    } */
 }
 
 /* -------------------- LIST -------------------- */
 .list {
     display: grid;
-    /* flex-direction: column; */
     margin: 1rem 0;
 
     section {
@@ -213,8 +187,6 @@ a {
         grid-template-columns: 1fr 7fr;
         margin: 0 1rem;
         padding: 1rem;
-        /* margin: 10px 0; */
-        /* padding: 0.25rem; */
 
         &:nth-child(even) {
             background-color: #eee;
@@ -231,9 +203,9 @@ a {
     }
 
     .bottom {
-        display: flex;
+        /* display: flex; */
         justify-content: space-between;
-        align-items: center;
+        /* align-items: center; */
         padding: 10px;
     }
 
@@ -244,20 +216,14 @@ a {
 
     .address::after {
         content: " 📍";
-        /* content: "\f3c5"; */
     }
 
     .number::after {
-        /* content: "\f095"; */
-        /* content: "&#xf095"; */
         content: "\01f4de";
-        /* content: " 📞"; */
     }
 
     .url::after {
-        /* content: "\f0ac"; */
         content: "\01f310";
-        /* content: " 🌐"; */
     }
 }
 
