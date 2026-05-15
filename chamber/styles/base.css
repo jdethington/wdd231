@@ -128,142 +128,138 @@ h2 {
 
 p,
 a {
+    padding: .5rem 0;
     font-size: small;
     text-decoration: none;
     color: var(--font-color-dark);
 }
 
-.bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* -------------------- GRID* -------------------- */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
-    section {
-        margin: 0.5rem;
-        padding: 0.5rem;
-        background-color: #eee;
-        border: 1px solid rgb(0 0 0 / 10%);
-        border-radius: 8px;
-    }
-
-    .top img {
-        width: 135px;
-        height: 135px;
-    }
-
-    .bottom {
-        /* display: flex; */
-        flex-direction: column;
-        /* align-items: center; */
-    }
-
-    .address::before {
-        content: "📍 ";
-    }
-
-    .number::before {
-        content: "\01f4de";
-    }
-
-    .url::before {
-        content: "\01f310";
-    }
-
 }
+
+.grid section {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #eee;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 8px;
+}
+
+.top img {
+    width: 135px;
+    height: 135px;
+}
+
+.grid .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid .address::before {
+    content: "📍 ";
+}
+
+.grid .number::before {
+    content: "\01f4de";
+}
+
+.grid .url::before {
+    content: "\01f310";
+}
+
 
 /* -------------------- LIST -------------------- */
 .list {
     display: grid;
     margin: 1rem 0;
+}
 
-    section {
-        display: grid;
-        grid-template-columns: 1fr 7fr;
-        margin: 0 1rem;
-        padding: 1rem;
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    margin: 0 1rem;
+    padding: 1rem;
+}
 
-        &:nth-child(even) {
-            background-color: #eee;
-        }
+.list section:nth-child(even) {
+    background-color: #ddd;
+}
 
-        &:nth-child(odd) {
-            background-color: #ccc;
-        }
-    }
+.list section:nth-child(odd) {
+    background-color: #eee;
+}
 
-    img {
-        width: 72px;
-        height: auto;
-    }
+.list img {
+    width: 72px;
+    height: auto;
+}
 
-    .bottom {
-        /* display: flex; */
-        justify-content: space-between;
-        /* align-items: center; */
-        padding: 10px;
-    }
+.list .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
 
-    .info {
-        display: grid;
-        justify-items: end;
-    }
+.list .info {
+    display: grid;
+    justify-items: end;
+}
 
-    .address::after {
-        content: " 📍";
-    }
+.list .address::after {
+    content: " 📍";
+}
 
-    .number::after {
-        content: "\01f4de";
-    }
+.list .number::after {
+    content: " \01f4de";
+}
 
-    .url::after {
-        content: "\01f310";
-    }
+.list .url::after {
+    content: " \01f310";
 }
 
 /* ******************** FOOTER ******************** */
 footer {
     text-align: center;
+}
 
+.social {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
 
-    .social {
-        padding-top: 1rem;
-        display: flex;
-        justify-content: center;
-        column-gap: 8px;
-    }
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: var(--background-color-light) solid 1px;
+    border-radius: 4px;
+}
 
-    .social a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 44px;
-        height: 44px;
-        border: var(--background-color-light) solid 1px;
-        border-radius: 4px;
-    }
+.social img {
+    width: 33px;
+    height: 33px;
+}
 
-    .social img {
-        width: 33px;
-        height: 33px;
-    }
+.social a:hover {
+    background-color: var(--hover-light);
+}
 
-    .social a:hover {
-        background-color: var(--hover-light);
-    }
+.date {
+    background-color: var(--background-color-light);
+    padding: 1rem 0;
+}
 
-    .date {
-        background-color: var(--background-color-light);
-        padding: 1rem 0;
-    }
-
-    p {
-        padding-bottom: 5px;
-    }
+footer p {
+    padding-bottom: 5px;
 }
