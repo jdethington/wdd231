@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Gilbert Veterinary Hospital",
+            "address": "1655 S. Gilbert Rd",
+            "phoneNumber": "(480)963-1815",
+            "url": "https://gilbertvet.com/",
+            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/1219/26116332_1367600603386298_6759832103366094467_o.jpg",
+            "membership": "1",
+            "other": ""
+        },
+        {
+            "name": "Club Pilates",
+            "address": "3546 S. Power Rd., Ste 104  Gilbert AZ 85234",
+            "phoneNumber": "(480) 571-6866",
+            "url": "https://www.clubpilates.com/location/morrisonranch",
+            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25783/MemLogoSearch_Website%20Designation%20Banner%20(13).png",
+            "membership": "2",
+            "other": ""
+        },
+        {
+            "name": "Apex Accounting and Advisory",
+            "address": "7397 S Roanoke St Gilbert AZ 85298",
+            "phoneNumber": "(480) 717-8638",
+            "url": "http://apexbusinesspros.com/",
+            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25340/MemLogoSearch_Apex%20Accounting%20and%20Advisory.png",
+            "membership": "3",
+            "other": "3"
+        },
+        {
+            "name": "Apple Nailed It Spa",
+            "address": "5498 S Power Rd #104 Gilbert AZ 85295",
+            "phoneNumber": "(480) 326-3995",
+            "url": "https://applenailedit.com/",
+            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25812/MemLogoSearch_Apple%20Nailed%20It.png",
+            "membership": "1",
+            "other": "1"
+        },
+        {
+            "name": "TruNorth LLC",
+            "address": "Gilbert AZ 85295",
+            "phoneNumber": "(720) 474-5723",
+            "url": "http://www.trunorth-advisors.com/",
+            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/26019/MemLogoSearch_TruNorth%20LLC.png",
+            "membership": "2",
+            "other": "2"
+        },
+        {
+            "name": "Gilbert City Lifestyle",
+            "address": "2162 E. Williams Field Rd., Ste 111 Gilbert AZ 85295",
+            "phoneNumber": "(602) 888-3459",
+            "url": "http://www.citylifestyle.com/gilbert",
+            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/21732/MemLogoSearch_Gilbert%20City%20Lifestyle.png",
+            "membership": "3",
+            "other": ""
+        },
+        {
+            "name": "Pinch A Penny #301",
+            "address": "3150 E Chandler Heights Rd Ste 103 Gilbert AZ 85298",
+            "phoneNumber": "(480) 916-0406",
+            "url": "",
+            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25437/MemLogoSearch_Pinch%20A%20Penny%20X301.png",
+            "membership": "1",
+            "other": ""
+        }
+    ]
+}

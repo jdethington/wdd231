@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Directory</title>
+    <meta name="description" content="Directory for Gilbert Chamber of Commerce. Find businesses and members.">
+    <meta name="author" content="Jacob Dwayne Ethington">
+    <!-- ******************** Facebook ******************** -->
+    <meta property="og:title" content="directory">
+    <meta property="og:description" content="Directory for Gilbert Chamber of Commerce. Find businesses and members.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://jdethington.github.io/wdd231/chamber/directory.html">
+    <!-- ******************** favicon ******************** -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- ******************** stylesheets ******************** -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- ******************** scripts ******************** -->
+    <script type="module" src="scripts/date.js"></script>
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/directory.js"></script>
+    <!-- ******************** Fonts ******************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <header>
+        <div>
+            <a href="https://jdethington.github.io/wdd231/chamber/"><img
+                    src="https://gilbertaz.com/img/gilbert-c-blue.svg" alt="logo"></a>
+            <span>Gilbert Chamber of Commerce</span>
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Directory</h1>
+        <div class="listGrid">
+            <button id="grid">GRID <i class="fa fa-phone"></i></button>
+            <button id="list">LIST</button>
+        </div>
+        <div class="grid" id="cards">
+            <!--  -->
+            <!-- <section>
+                <div class="top"><img src="images/socialmedia/github.svg" alt="image"></div>
+                <div class="bottom">
+                    <div class="name">
+                        <h2>GitHub</h2>
+                    </div>
+                    <div class="info">
+                        <p class="address">address</p>
+                        <a class="number" href="tel:+">234-567-8910</a>
+                        <a class="url">Web Site</a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                        <p></p>
+                    </div>
+                </div>
+            </section> -->
+            <!--  -->
+        </div>
+    </main>
+    <footer>
+        <section>
+            <div class="social">
+                <a href="https://github.com/jdethington" target="_blank"><img src="images/socialmedia/github.svg"
+                        alt="github"></a>
+                <a href="https://www.linkedin.com/in/jdethington/" target="_blank"><img
+                        src="images/socialmedia/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.facebook.com/jacob.ethington.50" target="_blank"><img
+                        src="images/socialmedia/facebook.svg" alt="facebook"></a>
+                <a href="https://x.com/home" target="_blank"><img src="images/socialmedia/twitter-x.svg"
+                        alt="twitter-X"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="images/socialmedia/youtube.svg"
+                        alt="youtube"></a>
+            </div>
+            <div class="date">
+                <p><span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona, USA</p>
+                <p><span id="lastModified"></span></p>
+            </div>
+        </section>
+    </footer>
 </body>
+
 </html>
