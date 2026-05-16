@@ -43,14 +43,6 @@ const displayCompanies = (companies) => {
         const number = document.createElement('p');
         number.setAttribute('class', 'number');
         number.textContent = company.phoneNumber;
-        // Company Website
-        const url = document.createElement('a');
-        url.setAttribute('class', 'url');
-        url.setAttribute('href', company.url);
-        url.setAttribute('target', '_blank');
-        url.textContent = 'Visit Website';
-        // Company membership level
-        const membership = document.createElement('p');
 
 
         // div class="top"
@@ -60,8 +52,22 @@ const displayCompanies = (companies) => {
         // div class="info"
         cardInfo.appendChild(address);
         cardInfo.appendChild(number);
-        cardInfo.appendChild(url);
-        cardInfo.appendChild(membership);
+        // Company Website
+        if (company.url != "") {
+            const url = document.createElement('a');
+            url.setAttribute('class', 'url');
+            url.setAttribute('href', company.url);
+            url.setAttribute('target', '_blank');
+            url.textContent = 'Visit Website';
+            cardInfo.appendChild(url);
+        }
+        if (company.membership != "") {
+            // Company membership level
+            const membership = document.createElement('p');
+            membership.textContent = `Member Level ${company.membership}`;
+            cardInfo.appendChild(membership);
+            // cardBottom.appendChild(membership);
+        }
 
         // div class="bottom"
         cardBottom.appendChild(cardName);
