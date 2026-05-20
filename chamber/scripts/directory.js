@@ -14,6 +14,7 @@ async function getCompanyData() {
 const displayCompanies = (companies) => {
     companies.forEach((company) => {
         const card = document.createElement('section');
+        card.setAttribute('class', 'companyCard');
         // top/left part of card with image
         const cardImage = document.createElement('div');
         cardImage.setAttribute('class', 'top');

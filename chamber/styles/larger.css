@@ -1,34 +1,20 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 56rem) {
 
-    /* 38rem == 608px */
-    header div,
-    main,
-    nav,
-    footer section {
-        max-width: 900px;
-        margin: 0 auto;
+    /* 56rem == 896px */
+    .home {
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    header {
-        grid-template-columns: 107px auto;
+    .events {
+        grid-column: span 2;
     }
 
-    .hamburger {
-        display: none;
+    .weather img {
+        width: 75px;
+        border-radius: 5px;
     }
 
-    /* ******************** NAVIGATION ******************** */
-    .navigation {
-        display: block;
-        padding-left: 10px;
-        border-bottom: solid 1px #eee;
-    }
-
-    .navigation ul {
-        display: flex;
-    }
-
-    .navigation a {
-        border: none;
+    .weather>div {
+        align-items: flex-start;
     }
 }

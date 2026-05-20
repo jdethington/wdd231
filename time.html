@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3-Day Forecast - OpenWeatherMap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .day {
+            margin: 15px 0;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .temp {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>3-Day Forecast - Phoenix, AZ</h1>
+    <div id="result"></div>
+
+    <script>
+        const API_KEY = 'fe84923e86ff3cd59d1f309606b6493b';   // ← Replace with your key
+        const lat = 33.4484;
+        const lon = -112.0740;
+
+        async function get3DayForecast() {
+            try {
+                const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=24&appid=${API_KEY}&units=imperial`;
+
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data.cod !== "200") {
+                    document.getElementById('result').innerHTML = `<p>Error: ${data.message}</p>`;
+                    return;
+                }
+
+                let html = `<p><strong>City:</strong> ${data.city.name}, ${data.city.country}</p><h2>3-Day Forecast</h2>`;
+
+                const dailyHighs = {};
+
+                data.list.forEach(item => {
+                    const date = new Date(item.dt * 1000);
+                    const dayKey = date.toISOString().split('T')[0]; // YYYY-MM-DD
+
+                    if (!dailyHighs[dayKey]) {
+                        dailyHighs[dayKey] = {
+                            date: date,
+                            high: item.main.temp_max,
+                            description: item.weather[0].description
+                        };
+                    } else {
+                        // Keep the highest temperature for the day
+                        if (item.main.temp_max > dailyHighs[dayKey].high) {
+                            dailyHighs[dayKey].high = item.main.temp_max;
+                        }
+                    }
+                });
+
+                // Show first 3 days
+                Object.values(dailyHighs).slice(0, 3).forEach((day, index) => {
+                    const weekday = index === 0
+                        ? "Today"
+                        : day.date.toLocaleDateString('en-US', { weekday: 'long' });
+
+                    const highTemp = day.high.toFixed(1);   // 1 decimal
+
+                    html += `
+            <div class="day">
+              <strong>${weekday}</strong> (${day.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}) <br>
+              <span class="temp">High: ${highTemp}°F</span><br>
+              ${day.description}
+            </div>
+          `;
+                });
+
+                document.getElementById('result').innerHTML = html;
+
+            } catch (error) {
+                console.error(error);
+                document.getElementById('result').innerHTML = '<p>Failed to fetch forecast data.</p>';
+            }
+        }
+
+        get3DayForecast();
+    </script>
+</body>
+
+</html>
