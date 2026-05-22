@@ -96,15 +96,37 @@ function displayForecastResults(data) {
     let htmlForecast = '';
     Object.values(dailyTemps).slice(0, 3).forEach((day, index) => {
         const weekday = index === 0 ? "Today" : day.date.toLocaleDateString('en-US', { weekday: 'long' });
+        const dateStr = day.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        
+        const iconUrl = `https://openweathermap.org/img/wn/${day.icon}@2x.png`;
+        htmlForecast += `
+        <div class="forecast-day">
+          <img src="${iconUrl}" alt="${day.description}" class="weather-icon">
+          
+          <div class="day-info">
+            <div class="day-name">${weekday}</div>
+            <div class="date">${dateStr}</div>
+            <div class="description">${day.description}</div>
+          </div>
+          
+          <div class="temp-range">
+            <div class="high">High: ${day.high.toFixed(1)}°F</div>
+            <div class="low">Low: ${day.low.toFixed(1)}°F</div>
+          </div>
+        </div>
+      `;
+
 
         const highTemp = day.high.toFixed(0);
-        const lowTemp = day.low.toFixed();
-        console.log(weekday);
-        console.log(highTemp);
-        console.log(lowTemp);
-        htmlForecast += `<p>${weekday}: ${highTemp}/${lowTemp}&deg;F<p/>`
+        const lowTemp = day.low.toFixed(0);
+
+        // console.log(weekday);
+        // console.log(highTemp);
+        // console.log(lowTemp);
+        htmlForecast += `<p>${weekday}: ${highTemp}/${lowTemp}&deg;F`
         // forecast = `${weekday}: ${highTemp}/${lowTemp}`;
     });
+    console.log(dailyTemps);
     forecast.innerHTML = htmlForecast;
 }
 

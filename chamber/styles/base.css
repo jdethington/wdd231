@@ -218,6 +218,10 @@ h1 {
 }
 
 /* -------------------- FORECAST -------------------- */
+.forecast p {
+    font-size: 2rem;
+    padding: 1rem;
+}
 
 /* ******************** Grid/List buttons ******************** */
 .listGrid {
