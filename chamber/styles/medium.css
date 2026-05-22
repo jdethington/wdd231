@@ -36,13 +36,21 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    /* ******************** MAIN ******************** */
+    /* -------------------- HERO -------------------- */
+    .key {
+        bottom: 20px;
+        right: 20px;
+    }
+
     .events {
         grid-column: span 2;
     }
 
+    /* ******************** FOOTER ******************** */
     footer>div {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 10px;
         align-items: center;
     }

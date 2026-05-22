@@ -1,5 +1,6 @@
 // FROM VIDEO EXAMPLES
 // SELECT HTML ELEMENTS IN THE DOCUMENT
+// ---------- Current Weather
 const temperature = document.querySelector('#temperature');
 const graphic = document.querySelector('#graphic');
 const description = document.querySelector('#description');
@@ -8,20 +9,19 @@ const tempLow = document.querySelector('#tempLow');
 const humidity = document.querySelector('#humidity');
 const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
+// ---------- Forecast Weather
 // const today = document.querySelector('#today');
 // const tomorrow = document.querySelector('#tomorrow');
 // const nextDay = document.querySelector('#nextDay');
-const forecastCard = document.createElement('p');
-let forecast = document.querySelector('#forecast');
+// const forecastCard = document.createElement('p');
+const forecast = document.querySelector('#forecast');
 
 // ********** CREATE REQUIRED VARIABLES FOR THE URL
 const myKey = "498853e6f84ebc89b9bed65bfa5b177e";
 const myKeyForecast = "fe84923e86ff3cd59d1f309606b6493b";
 // ---------- 33.352804134817404, -111.78901263627377 - Gilbert, Arizona
 const myLat = "33.352804134817404";
-// ---------- const myLat = "33.33063";
 const myLon = "-111.78901263627377";
-// ---------- const myLon = "-111.80233";
 // CONSTRUCT A FULL PATH USING TEMPLATE LITERALS
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKeyForecast}&units=imperial`;
 // ********** TRY TO GRAB THE CURRENT WEATHER DATA
@@ -93,17 +93,19 @@ function displayForecastResults(data) {
         }
     });
     // show first 3 days
+    let htmlForecast = '';
     Object.values(dailyTemps).slice(0, 3).forEach((day, index) => {
         const weekday = index === 0 ? "Today" : day.date.toLocaleDateString('en-US', { weekday: 'long' });
 
-        const highTemp = day.high.toFixed(1);
-        const lowTemp = day.low.toFixed(1);
+        const highTemp = day.high.toFixed(0);
+        const lowTemp = day.low.toFixed();
         console.log(weekday);
         console.log(highTemp);
         console.log(lowTemp);
+        htmlForecast += `<p>${weekday}: ${highTemp}/${lowTemp}&deg;F<p/>`
         // forecast = `${weekday}: ${highTemp}/${lowTemp}`;
-        forecastCard.append(weekday);
     });
+    forecast.innerHTML = htmlForecast;
 }
 
 apiFetchCurrent();

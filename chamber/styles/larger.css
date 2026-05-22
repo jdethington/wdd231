@@ -1,9 +1,16 @@
 @media only screen and (min-width: 56rem) {
 
     /* 56rem == 896px */
+    /* -------------------- HERO -------------------- */
+    .key {
+        bottom: 40px;
+        right: 40px;
+    }
+
     .home {
         grid-template-columns: repeat(4, 1fr);
     }
+
 
     .events {
         grid-column: span 2;
