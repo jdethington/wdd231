@@ -156,7 +156,7 @@ h1 {
 /* background-color: rgb(72, 190, 245); */
 .events p,
 .weather>div,
-.forecast div {
+.forecast>div {
     background-color: rgb(72, 190, 245);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -218,9 +218,33 @@ h1 {
 }
 
 /* -------------------- FORECAST -------------------- */
-.forecast p {
+/* .forecast p {
     font-size: 2rem;
     padding: 1rem;
+} */
+.forecast>div {
+    display: grid;
+    /* gap: 5px; */
+    padding: 0;
+}
+
+.forecast-day {
+    display: grid;
+    /* grid-template-columns: minmax(45px, 1fr) 1fr 1fr; */
+    grid-template-columns: 20% 40% 40%;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    /* border: 2px solid rgb(0 0 0 / 10%);
+    border-radius: 10px; */
+}
+
+.forecast-day img {
+    width: 45px;
+    height: auto;
+    background-color: skyblue;
+    border: 2px solid rgb(0 0 0 / 10%);
+    border-radius: 5px;
 }
 
 /* ******************** Grid/List buttons ******************** */
