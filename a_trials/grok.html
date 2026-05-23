@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Random Companies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .companies-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px auto;
+            max-width: 1200px;
+        }
+
+        .company-card {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        /* Hide the third card on small screens */
+        @media (max-width: 768px) {
+            .company-card:nth-child(3) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Dynamic Random Companies</h1>
+    <button onclick="generateNewCompanies()">Get New Companies</button>
+
+    <div class="companies-container" id="companiesContainer">
+        <!-- Cards inserted by JavaScript -->
+    </div>
+
+    <script>
+        let currentCompanies = []; // Store currently selected companies
+
+        const companiesData = [
+            { name: "Apple", industry: "Technology", ceo: "Tim Cook" },
+            { name: "Microsoft", industry: "Technology", ceo: "Satya Nadella" },
+            { name: "Google", industry: "Technology", ceo: "Sundar Pichai" },
+            { name: "Amazon", industry: "E-commerce", ceo: "Andy Jassy" },
+            { name: "Tesla", industry: "Automotive", ceo: "Elon Musk" },
+            { name: "Meta", industry: "Social Media", ceo: "Mark Zuckerberg" },
+            { name: "Netflix", industry: "Entertainment", ceo: "Ted Sarandos" },
+            { name: "NVIDIA", industry: "Technology", ceo: "Jensen Huang" },
+            { name: "Samsung", industry: "Electronics", ceo: "Lee Jae-yong" }
+        ];
+
+        function getRandomCompanies(count) {
+            const shuffled = [...companiesData].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+
+        function createCompanyCard(company) {
+            const card = document.createElement('div');
+            card.className = 'company-card';
+            card.innerHTML = `
+        <h2>${company.name}</h2>
+        <p><strong>Industry:</strong> ${company.industry}</p>
+        <p><strong>CEO:</strong> ${company.ceo}</p>
+      `;
+            return card;
+        }
+
+        function renderCompanies() {
+            const container = document.getElementById('companiesContainer');
+            container.innerHTML = '';
+
+            currentCompanies.forEach(company => {
+                const card = createCompanyCard(company);
+                container.appendChild(card);
+            });
+        }
+
+        function generateNewCompanies() {
+            // Always pick 3 companies (max needed)
+            currentCompanies = getRandomCompanies(3);
+            renderCompanies();
+        }
+
+        // Initial load
+        window.onload = generateNewCompanies;
+
+        // Dynamic resize handling
+        window.addEventListener('resize', () => {
+            renderCompanies();   // Re-render to show/hide 3rd card
+        });
+    </script>
+
+</body>
+
+</html>

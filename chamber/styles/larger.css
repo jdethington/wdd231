@@ -18,10 +18,15 @@
 
     .weather img {
         width: 75px;
-        border-radius: 5px;
+        /* border-radius: 5px; */
     }
 
     .weather>div {
         align-items: flex-start;
     }
+
+    .spotlight>section:nth-child(3) {
+        display: block;
+    }
+
 }

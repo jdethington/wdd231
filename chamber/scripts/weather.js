@@ -63,7 +63,7 @@ async function apiFetchForecast() {
         const response = await fetch(urlForecast);
         if (response.ok) {
             const dataForecast = await response.json();
-            console.log(dataForecast);
+            // console.log(dataForecast);
             displayForecastResults(dataForecast);
         } else {
             throw Error(await response.text());
@@ -114,18 +114,8 @@ function displayForecastResults(data) {
           </div>
         </div>
       `;
-
-
-        // const highTemp = day.high.toFixed(0);
-        // const lowTemp = day.low.toFixed(0);
-
-        // console.log(weekday);
-        // console.log(highTemp);
-        // console.log(lowTemp);
-        // htmlForecast += `<p>${weekday}: ${highTemp}/${lowTemp}&deg;F`
-        // forecast = `${weekday}: ${highTemp}/${lowTemp}`;
     });
-    console.log(dailyTemps);
+    // console.log(dailyTemps);
     forecast.innerHTML = htmlForecast;
 }
 

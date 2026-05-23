@@ -25,6 +25,7 @@
     <script type="module" src="scripts/date.js"></script>
     <script type="module" src="scripts/navigation.js"></script>
     <script type="module" src="scripts/weather.js"></script>
+    <script type="module" src="scripts/spotlight.js"></script>
     <!-- <script type="module" src="scripts/directory.js"></script> -->
     <!-- ******************** Fonts ******************** -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +58,7 @@
                 <img src="images/gilbert-watertower-2x1.jpg" alt="downtown Gilbert">
             </picture>
             <div class="key">
-                <button>Keynote Tickets</button>
+                <button><a href="join.html">Keynote Tickets</a></button>
             </div>
         </div>
         <h1>Home - Gilbert, Arizona Chamber of Commerce</h1>
@@ -88,25 +89,12 @@
             <div class="forecast">
                 <h2>Weather Forecast</h2>
                 <div id="forecast">
-                    <div>
-                        <p id="today-day">Today: </p>
-                        <p id="today-temp"></p>
-                    </div>
-                    <div>
-                        <p id="tomorrow-day">Today: </p>
-                        <p id="tomorrow-temp"></p>
-                    </div>
-                    <div>
-                        <p id="nextDay-day">Today: </p>
-                        <p id="nextDay-temp"></p>
-                    </div>
-                    <!-- <p id="tomorrow">Tomorrow: </p> -->
-                    <!-- <p id="nextDay">next: </p> -->
+                    <!-- forecast card added in javascript -->
                 </div>
             </div>
         </section>
-        <section class="randMembers">
-            Lorem ipsum dolor sit amet consectetur
+        <section class="grid spotlight" id="cards">
+            <!-- spotlight company cards added in javascript -->
         </section>
     </main>
     <footer>
