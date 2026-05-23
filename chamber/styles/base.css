@@ -118,12 +118,13 @@ header span {
 
 .key {
     position: absolute;
-    bottom: 10px;
+    bottom: 25px;
     right: 10px;
 }
 
-.key button {
-    padding: .7rem;
+.key a {
+    padding: .85rem;
+    /* margin-bottom: 2rem; */
     border-radius: 10px;
     /* background-color: #eee; */
     background-color: rgb(72, 190, 245);

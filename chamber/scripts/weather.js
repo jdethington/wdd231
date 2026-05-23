@@ -1,4 +1,4 @@
-// FROM VIDEO EXAMPLES
+// DERIVED FROM VIDEO EXAMPLES
 // SELECT HTML ELEMENTS IN THE DOCUMENT
 // ---------- Current Weather
 const temperature = document.querySelector('#temperature');
@@ -9,11 +9,6 @@ const tempLow = document.querySelector('#tempLow');
 const humidity = document.querySelector('#humidity');
 const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
-// ---------- Forecast Weather
-// const today = document.querySelector('#today');
-// const tomorrow = document.querySelector('#tomorrow');
-// const nextDay = document.querySelector('#nextDay');
-// const forecastCard = document.createElement('p');
 const forecast = document.querySelector('#forecast');
 
 // ********** CREATE REQUIRED VARIABLES FOR THE URL
