@@ -93,6 +93,8 @@ header span {
     color: var(--font-color-dark);
     text-decoration: none;
     border-bottom: solid 1px var(--background-color-light);
+
+    transition: background-color 0.5s ease;
 }
 
 .navigation li.current {
@@ -142,7 +144,8 @@ h2 {
     border-radius: 8px;
 }
 
-/* ---------- Certificate ---------- */
+/* ********** Certificate ********** */
+/* ---------- COURSE TYPE ---------- */
 .course-selected {
     background-color: var(--background-color-light);
 }
@@ -166,6 +169,8 @@ h2 {
     /* background-color: var(--background-color-light); */
     border-radius: 8px;
     padding: .5rem;
+
+    transition: background-color 0.5s ease;
 }
 
 .course-button button:hover {
@@ -173,6 +178,7 @@ h2 {
     background-color: var(--hover-light);
 }
 
+/* ------------- CLASS course-grid  -----------------
 .course-grid {
     display: grid;
     row-gap: 10px;
@@ -183,6 +189,50 @@ h2 {
     background-color: var(--background-color-light);
     border: none;
     border-radius: 4px;
+} */
+
+/* ------------- ID course-grid  ----------------- */
+#course-grid {
+    display: grid;
+    row-gap: 10px;
+}
+
+#course-grid button {
+    padding: .82rem;
+    background-color: var(--background-color-light);
+    border: none;
+    border-radius: 4px;
+
+    transition: background-color 0.25s ease;
+}
+
+#course-grid button:hover {
+    cursor: pointer;
+    background-color: var(--hover-light);
+}
+
+/* ---------- MODAL ---------- */
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: .5rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 8px;
 }
 
 /* ******************** FOOTER ******************** */

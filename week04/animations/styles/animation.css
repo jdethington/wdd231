@@ -1,0 +1,173 @@
+body {
+    max-width: 20rem;
+    margin: 4rem auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* #region Leaf Effect on Page */
+.leaf {
+    position: absolute;
+    animation-name: fall;
+    animation-duration: 15s;
+    /* Smooth easing */
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-iteration-count: infinite;
+    top: -30px;
+    left: 0;
+    opacity: 100;
+}
+
+.leaf:nth-child(1) {
+    left: 5%;
+    animation-delay: 0.2s;
+}
+
+.leaf:nth-child(2) {
+    left: 10%;
+    animation-delay: .8s;
+}
+
+.leaf:nth-child(3) {
+    left: 25%;
+    animation-delay: 0s;
+}
+
+.leaf:nth-child(4) {
+    left: 35%;
+    animation-delay: 0.6s;
+}
+
+.leaf:nth-child(5) {
+    left: 50%;
+    animation-delay: 0.4s;
+}
+
+.leaf:nth-child(6) {
+    left: 60%;
+    animation-delay: 1.3s;
+}
+
+.leaf:nth-child(7) {
+    left: 75%;
+    animation-delay: 0.7s;
+}
+
+.leaf:nth-child(8) {
+    left: 85%;
+    animation-delay: 1.7s;
+}
+
+.leaf:nth-child(9) {
+    left: 90%;
+    animation-delay: 0.6s;
+}
+
+.leaf:nth-child(10) {
+    left: 95%;
+    animation-delay: 0.2s;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+        /* Fall to bottom and rotate */
+        opacity: 0;
+        /* Fade out */
+    }
+}
+
+/* #endregion Leaf */
+
+/* #region prepare-css-animations.html Activity: Part 1 — loading icon using animation */
+
+.loader {
+    margin: 2rem;
+    width: 50px;
+    /* width of the loader */
+    height: 50px;
+    /* height of the loader */
+    border: 5px solid transparent;
+    /* border width */
+    border-color: #999 transparent #999 transparent;
+    /* border colors (4 - 2 transparent) */
+    border-radius: 50%;
+    /* make it round */
+    animation: spin 1.5s linear infinite;
+    /* spin animation with duration and continuous */
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+    /* blueish shadow effect on round div */
+}
+
+.loader::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+
+    /* spin 360 degrees */
+}
+
+@keyframes pulse {
+
+    /* pulse the gear emoji */
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    /* scale to 1 */
+    50% {
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+
+    /* scale to 1.25 */
+}
+
+.loader-t {
+    margin: 2rem;
+    width: 50px;
+    /* width of the loader */
+    height: 50px;
+    /* height of the loader */
+    border: 5px solid transparent;
+    /* border width */
+    border-color: #999 transparent #999 transparent;
+    /* border colors (4 - 2 transparent) */
+    border-radius: 50%;
+    /* make it round */
+    transition: transform 1.5s linear;
+    /* the only thing that changed was using transition versus animation */
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+    /* blueish shadow effect on round div */
+}
+
+.loader-t::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* the only thing that changed was using transition versus animation and the size and visibility at start */
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+.loader-t:hover {
+    transform: rotate(360deg);
+    /* Rotate on hover */
+}
+
+.loader-t:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+    /* Scale on hover */
+}
