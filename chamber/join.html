@@ -64,9 +64,9 @@
         <label>Last Name <input type="text" name="last" required autocomplete="family-name"
             title="Your Last Name"></label>
         <!-- TITLE -->
-        <label>Organization Title <input type="text" name="title" required autocomplete="organization-title"
-            title="Nome of your Organization"></label>
         <!-- pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven (7) characters using a regular expression -->
+        <label>Your Title <input type="text" name="title" required autocomplete="organization-title"
+            title="Letters, spaces, hyphens, at least 7 characters" pattern="^[a-zA-Z\s-]{7,}$" minlength="7"></label>
         <!-- EMAIL -->
         <label>Email <input type="email" name="email" required autocomplete="email" title="name@organization.com"
             placeholder="name@organization.com"></label>
