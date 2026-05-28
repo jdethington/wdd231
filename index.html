@@ -2,99 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Ethington | WDD 213 - Web Frontend Fundamentals I</title>
-    <meta name="description"
-        content="This is the first page for the WDD 213 Web frontend fundamentals I class at BUY-Idaho.">
-    <meta name="author" content="Jacob Dwayne Ethington">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob Ethington | WDD 213 - Web Frontend Fundamentals I</title>
+  <meta name="description"
+    content="This is the first page for the WDD 213 Web frontend fundamentals I class at BUY-Idaho.">
+  <meta name="author" content="Jacob Dwayne Ethington">
 
-    <meta property="og:title" content="Jacob Ethington | WDD 213 - Web Frontend Fundamentals I">
-    <meta property="og:description"
-        content="This is the first page for the WDD 213 Web frontend fundamentals I class at BUY-Idaho.">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://jdethington.github.io/wdd231/">
+  <meta property="og:title" content="Jacob Ethington | WDD 213 - Web Frontend Fundamentals I">
+  <meta property="og:description"
+    content="This is the first page for the WDD 213 Web frontend fundamentals I class at BUY-Idaho.">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://jdethington.github.io/wdd231/">
 
-    <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <!-- <script src="scripts/course.js" defer></script> -->
-    <script type="module" src="scripts/course.js"></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <!-- <script src="scripts/course.js" defer></script> -->
+  <script type="module" src="scripts/course.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <img src="images/cheese.svg" alt="site logo" width="24" height="24">
-        <span>Jacob Ethington</span>
-        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
-    </header>
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="chamber/index.html" target="_blank">Chamber Project</a></li>
-            <li><a href="#">Final Project</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Home</h1>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Hello! <br>My name is Jacob Ethington. <br>I am from Gilbert, Arizona. <br>I am a retired dairyman. <br>I
-                am
-                studying
-                to earn my
-                software development degree from BYU-I.</p>
-        </section>
-        <section class="photo">
-            <h2>Student Photo</h2>
-            <div><img src="images/profile.jpg" alt="Jacob" loading="lazy">
-            </div>
-        </section>
-        <section class="certificate">
-            <h2>Web Certificate Courses</h2>
-            <div class="course-button">
-                <button class="course-selected" id="all">ALL</button>
-                <button id="cse">CSE</button>
-                <button id="wdd">WDD</button>
-            </div>
+  <header>
+    <img src="images/cheese.svg" alt="site logo" width="24" height="24">
+    <span>Jacob Ethington</span>
+    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+  </header>
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li class="current"><a href="#">Home</a></li>
+      <li><a href="chamber/index.html" target="_blank">Chamber Project</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Home</h1>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! <br>My name is Jacob Ethington. <br>I am from Gilbert, Arizona. <br>I am a retired dairyman. <br>I
+        am
+        studying
+        to earn my
+        software development degree from BYU-I.</p>
+    </section>
+    <section class="photo">
+      <h2>Student Photo</h2>
+      <div><img src="images/profile.jpg" alt="Jacob" loading="lazy">
+      </div>
+    </section>
+    <section class="certificate">
+      <h2>Web Certificate Courses</h2>
+      <div class="course-button">
+        <button class="course-selected" id="all">ALL</button>
+        <button id="cse">CSE</button>
+        <button id="wdd">WDD</button>
+      </div>
 
-            <!-- <div class="course-grid"></div> -->
-            <div id="course-grid"></div>
+      <!-- <div class="course-grid"></div> -->
+      <div id="course-grid"></div>
 
-            <dialog id="course-details"></dialog>
+      <dialog id="course-details"></dialog>
 
-            <p>The total credits for course listed above is<span id="credits"></span></p>
-        </section>
-    </main>
-    <footer>
-        <div class="social">
-            <a href="https://github.com/jdethington" target="_blank"><img src="images/socialmedia/github.svg"
-                    alt="github" loading="lazy"></a>
-            <a href="https://www.linkedin.com/in/jdethington/" target="_blank"><img
-                    src="images/socialmedia/linkedin.svg" alt="linkedin" loading="lazy"></a>
-            <a href="https://www.facebook.com/jacob.ethington.50" target="_blank"><img
-                    src="images/socialmedia/facebook.svg" alt="facebook" loading="lazy"></a>
-            <a href="https://x.com/home" target="_blank"><img src="images/socialmedia/twitter-x.svg" alt="twitter-X"
-                    loading="lazy"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="images/socialmedia/youtube.svg" alt="youtube"
-                    loading="lazy"></a>
-        </div>
-        <div class="date">
-            <p><span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona, USA</p>
-            <p><span id="lastModified"></span></p>
-        </div>
-    </footer>
+      <p>The total credits for course listed above is<span id="credits"></span></p>
+    </section>
+  </main>
+  <footer>
+    <div class="social">
+      <a href="https://github.com/jdethington" target="_blank"><img src="images/socialmedia/github.svg" alt="github"
+          loading="lazy"></a>
+      <a href="https://www.linkedin.com/in/jdethington/" target="_blank"><img src="images/socialmedia/linkedin.svg"
+          alt="linkedin" loading="lazy"></a>
+      <a href="https://www.facebook.com/jacob.ethington.50" target="_blank"><img src="images/socialmedia/facebook.svg"
+          alt="facebook" loading="lazy"></a>
+      <a href="https://x.com/home" target="_blank"><img src="images/socialmedia/twitter-x.svg" alt="twitter-X"
+          loading="lazy"></a>
+      <a href="https://www.youtube.com/" target="_blank"><img src="images/socialmedia/youtube.svg" alt="youtube"
+          loading="lazy"></a>
+    </div>
+    <div class="date">
+      <p><span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona, USA</p>
+      <p><span id="lastModified"></span></p>
+    </div>
+  </footer>
+  <!-- <dialog id="course-details"></dialog> -->
 
 </body>
 

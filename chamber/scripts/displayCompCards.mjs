@@ -1,3 +1,5 @@
+// CREATES A CARD TO DISPLAY FOR EACH COMPANY IN THE LIST RECEIVED
+
 const displayCompanies = (companies) => {
     companies.forEach((company) => {
         const card = document.createElement('section');
@@ -52,7 +54,7 @@ const displayCompanies = (companies) => {
         if (company.membership != "") {
             // Company membership level
             const membership = document.createElement('p');
-            membership.textContent = `Member Level ${company.membership}`;
+            membership.textContent = `${company.membership} Member`;
             cardInfo.appendChild(membership);
             // cardBottom.appendChild(membership);
         }

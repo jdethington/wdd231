@@ -13,7 +13,7 @@ body {
     animation-duration: 15s;
     /* Smooth easing */
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     top: -30px;
     left: 0;
     opacity: 100;

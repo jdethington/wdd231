@@ -6,8 +6,8 @@
             "phoneNumber": "(480) 571-6866",
             "url": "https://www.clubpilates.com/location/morrisonranch",
             "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25783/MemLogoSearch_Website%20Designation%20Banner%20(13).png",
-            "membership": "2",
-            "other": ""
+            "membership": "Gold",
+            "other": "3"
         },
         {
             "name": "Apex Accounting and Advisory",
@@ -15,8 +15,8 @@
             "phoneNumber": "(480) 717-8638",
             "url": "http://apexbusinesspros.com/",
             "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25340/MemLogoSearch_Apex%20Accounting%20and%20Advisory.png",
-            "membership": "3",
-            "other": "3"
+            "membership": "Silver",
+            "other": "2"
         },
         {
             "name": "Apple Nailed It Spa",
@@ -24,7 +24,7 @@
             "phoneNumber": "(480) 326-3995",
             "url": "https://applenailedit.com/",
             "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25812/MemLogoSearch_Apple%20Nailed%20It.png",
-            "membership": "1",
+            "membership": "Gold",
             "other": "1"
         },
         {
@@ -33,7 +33,7 @@
             "phoneNumber": "(720) 474-5723",
             "url": "http://www.trunorth-advisors.com/",
             "image": "https://chambermaster.blob.core.windows.net/images/members/1886/26019/MemLogoSearch_TruNorth%20LLC.png",
-            "membership": "2",
+            "membership": "Silver",
             "other": "2"
         },
         {
@@ -42,8 +42,8 @@
             "phoneNumber": "(602) 888-3459",
             "url": "http://www.citylifestyle.com/gilbert",
             "image": "https://chambermaster.blob.core.windows.net/images/members/1886/21732/MemLogoSearch_Gilbert%20City%20Lifestyle.png",
-            "membership": "3",
-            "other": ""
+            "membership": "Gold",
+            "other": "1"
         },
         {
             "name": "Gilbert Veterinary Hospital",
@@ -51,8 +51,8 @@
             "phoneNumber": "(480)963-1815",
             "url": "https://gilbertvet.com/",
             "image": "https://chambermaster.blob.core.windows.net/images/members/1886/1219/26116332_1367600603386298_6759832103366094467_o.jpg",
-            "membership": "1",
-            "other": ""
+            "membership": "Bronze",
+            "other": "3"
         },
         {
             "name": "Pinch A Penny #301",
@@ -60,8 +60,8 @@
             "phoneNumber": "(480) 916-0406",
             "url": "",
             "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25437/MemLogoSearch_Pinch%20A%20Penny%20X301.png",
-            "membership": "1",
-            "other": ""
+            "membership": "NP",
+            "other": "4"
         }
     ]
 }

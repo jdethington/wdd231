@@ -19,7 +19,7 @@ const myLat = "33.352804134817404";
 const myLon = "-111.78901263627377";
 // CONSTRUCT A FULL PATH USING TEMPLATE LITERALS
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKeyForecast}&units=imperial`;
-// ********** TRY TO GRAB THE CURRENT WEATHER DATA
+// ********** GRAB THE CURRENT WEATHER DATA
 async function apiFetchCurrent() {
     try {
         const response = await fetch(url);

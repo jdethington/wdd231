@@ -178,19 +178,6 @@ h2 {
     background-color: var(--hover-light);
 }
 
-/* ------------- CLASS course-grid  -----------------
-.course-grid {
-    display: grid;
-    row-gap: 10px;
-}
-
-.course-grid button {
-    padding: .82rem;
-    background-color: var(--background-color-light);
-    border: none;
-    border-radius: 4px;
-} */
-
 /* ------------- ID course-grid  ----------------- */
 #course-grid {
     display: grid;
@@ -214,8 +201,9 @@ h2 {
 /* ---------- MODAL ---------- */
 dialog {
     border: 1px solid rgb(0 0 0 / 10%);
-    border-radius: .25rem;
-    padding: 1rem;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: auto;
     background-color: #fff;
     box-shadow: 0 0 3rem #777;
     width: 90%;
@@ -228,12 +216,13 @@ dialog {
 
 dialog button {
     position: absolute;
-    top: 25px;
-    right: 25px;
+    top: 20px;
+    right: 20px;
     padding: .5rem;
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: 8px;
 }
+
 
 /* ******************** FOOTER ******************** */
 footer {
@@ -255,6 +244,8 @@ footer {
     height: 44px;
     border: var(--background-color-light) solid 1px;
     border-radius: 4px;
+
+    transition: background-color 0.25s ease;
 }
 
 .social img {
