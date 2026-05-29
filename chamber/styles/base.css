@@ -422,27 +422,27 @@ h2 {
 } */
 
 form {
-    margin: 1rem 2%;
+    margin: 1rem;
 
     label {
         display: block;
         font-size: .8rem;
-        color: purple;
+        color: var(--font-color-dark);
         padding-top: .2rem;
     }
 
-    h3 {
+    /* h3 {
         font-size: .9rem;
         color: #E07A5F;
         margin: 1.5rem 0 .2rem 0;
         border-bottom: 1px solid #eee;
-    }
+    } */
 
     input[type=text],
     input[type=tel],
-    input[type=date],
     input[type=email],
-    select {
+    select,
+    textarea {
         display: block;
         margin: .1rem 0 1rem 0;
         padding: .3rem;
@@ -455,40 +455,42 @@ form {
         width: 250px;
     }
 
-    input:required {
+    input:required,
+    select:required {
         border-left-color: #d70000;
     }
 
-    input:focus {
-        border-left-color: black;
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-left-color: var(--hover);
         outline: none;
     }
 
-    input:required:valid {
+    input:required:valid,
+    select:required:valid {
         border-left-color: green;
     }
 
     input[type=submit] {
         border: none;
         text-align: center;
-        background-color: #3D405B;
-        color: white;
-        border-radius: 1rem;
+        /* background-color: #3D405B; */
+        background-color: var(--background-color-blue);
+        /* color: white; */
+        border-radius: 10px;
         padding: .75rem 1.5rem;
         margin: 2rem 0;
         font-size: 1.2rem;
-        -webkit-appearance: none;
-        appearance: none;
+        width: 250px;
+        /* -webkit-appearance: none;
+        appearance: none; */
     }
-}
-
-input:-webkit-autofill {
-    -webkit-text-fill-color: #3D405B;
 }
 
 /* ********** THANK YOU ********** */
 .thankYou {
-    padding-left: 1.1rem;
+    padding: 0 0 0 1.5rem;
 }
 
 #thankYou {
@@ -498,7 +500,7 @@ input:-webkit-autofill {
     background-color: var(--wayFinding);
     border: 1px solid var(--background-color-dark);
     border-radius: 10px;
-    margin: 1rem;
+    margin: 0 1rem;
     padding: 1rem;
 }
 
@@ -511,19 +513,38 @@ input:-webkit-autofill {
     padding: .25rem 0 0 0;
 }
 
-div+button {
+/* .thankYouLabel {
+    font-size: 2rem;
+}
+
+.thankYouResponse {
+    font-weight: bold;
+} */
+
+.thankYouButton {
+    display: grid;
+    margin: 2rem 1rem;
+    width: 300px;
+}
+
+.thankYouButton p {
+    padding: .75rem 1.5rem;
+    /* padding: 1.5rem; */
+    /* margin: 2rem; */
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
     background-color: var(--background-color-blue);
+}
+
+.thankYouButton a {
+    text-decoration: none;
+    color: var(--background-color-dark);
 }
 
 /* ******************** FOOTER ******************** */
 footer {
-    /* text-align: center; */
     padding: 1rem;
-}
-
-address {
-    font-weight: bold;
-    font-size: xx-large;
 }
 
 .social {

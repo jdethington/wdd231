@@ -19,9 +19,8 @@
   <!-- ******************** stylesheets ******************** -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
-  <!-- <link rel="stylesheet" href="styles/medium.css"> -->
-  <!-- <link rel="stylesheet" href="styles/larger.css"> -->
-  <!-- <link rel="stylesheet" href="../week04/startHere/startHere/styles/small.css"> -->
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
   <!-- ******************** scripts ******************** -->
   <script type="module" src="scripts/date.js"></script>
   <script type="module" src="scripts/navigation.js"></script>
@@ -66,7 +65,7 @@
         <!-- TITLE -->
         <!-- pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven (7) characters using a regular expression -->
         <label>Your Title <input type="text" name="title" required autocomplete="organization-title"
-            title="Letters, spaces, hyphens, at least 7 characters" pattern="^[a-zA-Z\s-]{7,}$" minlength="7"></label>
+            title="Letters, spaces, hyphens, at least 7 characters" pattern="[a-zA-Z\s-]{7,}$" minlength="7"></label>
         <!-- EMAIL -->
         <label>Email <input type="email" name="email" required autocomplete="email" title="name@organization.com"
             placeholder="name@organization.com"></label>
@@ -89,12 +88,14 @@
         </label>
 
         <!-- DESCRIPTION OF ORGANIZATION -->
-        <label><textarea type="text" title="Tell us about your organization." name="description"
-            placeholder="Tell us about your organization."></textarea></label>
+        <label><textarea title="Tell us about your organization." name="description"
+            placeholder="Tell us about your organization." rows="4"></textarea></label>
+        <!-- SUBMIT BUTTON -->
+        <!-- <input type="submit" value="Join Us!"> -->
+        <input type="submit" value="Become a Member!">
+        <!-- <input type="submit" value="Activate Membership!"> -->
         <!-- HIDDEN TIMESTAMP -->
         <label><input type="hidden" name="timestamp" value="12:00" id="timestamp"></label>
-        <!-- SUBMIT BUTTON -->
-        <input type="submit" value="Join Us!">
 
       </form>
     </div>
