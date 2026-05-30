@@ -420,13 +420,6 @@ h2 {
 
 }
 
-/* form {
-    padding: 4rem;
-    border: 3px dashed red;
-    display: grid;
-    background-color: #E07A5F;
-} */
-
 form {
     margin: 1rem;
 
@@ -434,7 +427,8 @@ form {
         display: block;
         font-size: .8rem;
         color: var(--font-color-dark);
-        padding-top: .2rem;
+        padding-top: .5rem;
+        width: 100%;
     }
 
     fieldset {
@@ -460,7 +454,8 @@ form {
         border-left-color: #555;
         font-size: 1rem;
         color: #3D405B;
-        width: 250px;
+        /* width:250px; */
+        width: 100%;
     }
 
     input:required,
@@ -481,19 +476,18 @@ form {
     }
 
     input[type=submit] {
-        border: none;
+        /* border: none; */
         text-align: center;
         /* background-color: #3D405B; */
         background-color: var(--background-color-blue);
         /* color: white; */
-        border: 1px solid var(--background-color-dark);
+        /* border: 1px solid var(--background-color-dark); */
         border-radius: 10px;
         padding: .75rem 1.5rem;
         margin: 2rem 0;
         font-size: 1.2rem;
-        width: 250px;
-        /* -webkit-appearance: none;
-        appearance: none; */
+        /* width: 250px;      */
+        width: 100%;
     }
 }
 
@@ -567,7 +561,7 @@ dialog {
 
 ::backdrop {
     background-color: rgb(0 0 0 / 50%);
-    animation: fadeIn 3s;
+    animation: fadeIn 1s;
 }
 
 dialog button {
@@ -576,10 +570,10 @@ dialog button {
     right: 10px;
     padding: .5rem .75rem;
     border: 1px solid rgb(0 0 0 / 10%);
-    border-radius: 8px;
+    border-radius: 120px;
     background-color: var(--wayFinding);
 
-    animation: spin 1s linear 5s infinite;
+    animation: spin 1s linear 15s infinite;
 }
 
 /* ********** THANK YOU ********** */
@@ -705,11 +699,11 @@ footer p {
 
 @keyframes spin {
     to {
-        transform: rotate(360);
+        transform: rotate(360deg);
     }
 }
 
-@keyframes pulse {
+/* @keyframes pulse {
 
     0%,
     100% {
@@ -719,4 +713,4 @@ footer p {
     50% {
         transform: scale(1.5);
     }
-}
+} */
