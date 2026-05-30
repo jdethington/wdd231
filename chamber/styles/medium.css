@@ -48,6 +48,13 @@
         grid-column: span 2;
     }
 
+    /* ******************** JOIN ******************** */
+    .join {
+        /* display: grid; */
+        grid-template-columns: 1fr 1fr;
+
+    }
+
     /* ******************** FOOTER ******************** */
     footer>div {
         display: flex;
