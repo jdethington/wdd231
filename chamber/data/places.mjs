@@ -1,5 +1,19 @@
 export const places = [
     {
+        "name": "Agritopia",
+        "address": "3000 E Ray Rd, Gilbert, AZ 85296",
+        "cost": "Free to visit (meals/shopping vary)",
+        "description": "Urban farm community with gardens, Joe's Farm Grill, shops, and a farm-to-table vibe. Ideal for photos, fresh produce, and experiencing village-style living.",
+        "photo": "agritopia-1.webp"
+    },
+    {
+        "name": "Freestone District Park",
+        "address": "1045 E Juniper Ave, Gilbert, AZ 85234",
+        "cost": "Free (rides like carousel may require tickets)",
+        "description": "Features playgrounds, ponds, walking paths, an antique carousel, mini train, sports fields, and picnic areas. Great for family outings and relaxed outdoor fun.",
+        "photo": "freestone.webp"
+    },
+    {
         "name": "Riparian Preserve at Water Ranch",
         "address": "2757 E Guadalupe Rd, Gilbert, AZ 85234",
         "cost": "Free (ramada rentals or fishing license extra)",
@@ -21,20 +35,6 @@ export const places = [
         "photo": "hale-theatre.webp"
     },
     {
-        "name": "Freestone District Park",
-        "address": "1045 E Juniper Ave, Gilbert, AZ 85234",
-        "cost": "Free (rides like carousel may require tickets)",
-        "description": "Features playgrounds, ponds, walking paths, an antique carousel, mini train, sports fields, and picnic areas. Great for family outings and relaxed outdoor fun.",
-        "photo": "freestone.webp"
-    },
-    {
-        "name": "Agritopia",
-        "address": "3000 E Ray Rd, Gilbert, AZ 85296",
-        "cost": "Free to visit (meals/shopping vary)",
-        "description": "Urban farm community with gardens, Joe's Farm Grill, shops, and a farm-to-table vibe. Ideal for photos, fresh produce, and experiencing village-style living.",
-        "photo": "agritopia.webp"
-    },
-    {
         "name": "FatCats Entertainment",
         "address": "4321 E Baseline Rd, Gilbert, AZ 85234",
         "cost": "Varies by activity (e.g., bowling ~$20–30/lane/hour)",
@@ -48,20 +48,20 @@ export const places = [
         "description": "Large 272-acre park with splash pad, playgrounds, fishing lake, sports courts, walking trails, and amphitheater for events.",
         "photo": "gilbert-park.webp"
     },
-    {
-        "name": "Gilbert Farmers Market",
-        "address": "Varies seasonally—often 222 N Ash St (Downtown), Gilbert, AZ",
-        "cost": "Free entry (shopping varies)",
-        "description": "Weekly market with fresh produce, crafts, food vendors, and local goods. A lively community event, typically Saturday mornings.",
-        "photo": "gilbert-farmers-market.webp"
-    },
-    {
-        "name": "Main Event",
-        "address": "1735 S SanTan Village Pkwy, Gilbert, AZ 85295",
-        "cost": "Varies (e.g., unlimited play packages ~$20–40+ per person)",
-        "description": "Entertainment center offering bowling, arcade, laser tag, billiards, ropes courses, and dining. Excellent for parties and all-day fun.",
-        "photo": "main-event.webp"
-    },
+    // {
+    //     "name": "Gilbert Farmers Market",
+    //     "address": "Varies seasonally—often 222 N Ash St (Downtown), Gilbert, AZ",
+    //     "cost": "Free entry (shopping varies)",
+    //     "description": "Weekly market with fresh produce, crafts, food vendors, and local goods. A lively community event, typically Saturday mornings.",
+    //     "photo": "gilbert-farmers-market.webp"
+    // },
+    // {
+    //     "name": "Main Event",
+    //     "address": "1735 S SanTan Village Pkwy, Gilbert, AZ 85295",
+    //     "cost": "Varies (e.g., unlimited play packages ~$20–40+ per person)",
+    //     "description": "Entertainment center offering bowling, arcade, laser tag, billiards, ropes courses, and dining. Excellent for parties and all-day fun.",
+    //     "photo": "main-event.webp"
+    // },
     {
         "name": "Outdoor Adventures (Local Trails or Saguaro Lake)",
         "address": "Various trailheads or Saguaro Lake (~30–40 min drive)",

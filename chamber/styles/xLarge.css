@@ -8,4 +8,14 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #allPlaces div {
+
+        grid-template-areas:
+            "name desc"
+            "photo desc"
+            "photo location"
+            "photo learn "
+        ;
+
+    }
 }

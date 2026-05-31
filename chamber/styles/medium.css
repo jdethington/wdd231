@@ -61,12 +61,34 @@
         grid-template-areas:
             "photo name"
             "photo desc"
-            "photo location";
+            /* "photo location" */
+            "learn location"
+        ;
 
     }
 
-    #allPlaces div img {
+    #allPlaces div figure {
+        display: block;
+    }
+
+    #allPlaces div figure img {
         width: 300px;
+        /* height: 200px; */
+        transition: all 1s ease-in 100ms;
+        /* transition-property: all; */
+        /* transition-duration: 2s; */
+        /* transition-timing-function: ease-in; */
+        /* transition-delay: 100ms; */
+    }
+
+    #allPlaces div img:hover {
+        /* width: 110%; */
+        border-radius: 15px 150px;
+        /* opacity: 0.5; */
+        /* filter: blur(4px); */
+        /* filter: blur(1px) grayscale(50%); */
+        /* filter: contrast(50%); */
+        /* transform: scaleX(-1); */
     }
 
     /* ******************** FOOTER ******************** */
@@ -80,5 +102,9 @@
 
     .social {
         padding: 0;
+    }
+
+    @keyframes jump {
+        0% {}
     }
 }

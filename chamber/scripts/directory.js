@@ -11,7 +11,7 @@ async function getCompanyData() {
     const data = await response.json();
     // console.table(data);
     displayCompanies(data.companies);
-    displayCompanies(data.businesses);
+    // displayCompanies(data.businesses);
 }
 
 
