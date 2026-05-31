@@ -1,80 +1,15 @@
 {
-    "companies": [
-        {
-            "name": "Club Pilates",
-            "address": "3546 S. Power Rd., Ste 104  Gilbert AZ 85234",
-            "phoneNumber": "(480) 571-6866",
-            "url": "https://www.clubpilates.com/location/morrisonranch",
-            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25783/MemLogoSearch_Website%20Designation%20Banner%20(13).png",
-            "membership": "Gold",
-            "other": "3"
-        },
-        {
-            "name": "Apex Accounting and Advisory",
-            "address": "7397 S Roanoke St Gilbert AZ 85298",
-            "phoneNumber": "(480) 717-8638",
-            "url": "http://apexbusinesspros.com/",
-            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25340/MemLogoSearch_Apex%20Accounting%20and%20Advisory.png",
-            "membership": "Silver",
-            "other": "2"
-        },
-        {
-            "name": "Apple Nailed It Spa",
-            "address": "5498 S Power Rd #104 Gilbert AZ 85295",
-            "phoneNumber": "(480) 326-3995",
-            "url": "https://applenailedit.com/",
-            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25812/MemLogoSearch_Apple%20Nailed%20It.png",
-            "membership": "Gold",
-            "other": "1"
-        },
-        {
-            "name": "TruNorth LLC",
-            "address": "Gilbert AZ 85295",
-            "phoneNumber": "(720) 474-5723",
-            "url": "http://www.trunorth-advisors.com/",
-            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/26019/MemLogoSearch_TruNorth%20LLC.png",
-            "membership": "Silver",
-            "other": "2"
-        },
-        {
-            "name": "Gilbert City Lifestyle",
-            "address": "2162 E. Williams Field Rd., Ste 111 Gilbert AZ 85295",
-            "phoneNumber": "(602) 888-3459",
-            "url": "http://www.citylifestyle.com/gilbert",
-            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/21732/MemLogoSearch_Gilbert%20City%20Lifestyle.png",
-            "membership": "Gold",
-            "other": "1"
-        },
-        {
-            "name": "Gilbert Veterinary Hospital",
-            "address": "1655 S. Gilbert Rd",
-            "phoneNumber": "(480)963-1815",
-            "url": "https://gilbertvet.com/",
-            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/1219/26116332_1367600603386298_6759832103366094467_o.jpg",
-            "membership": "Bronze",
-            "other": "3"
-        },
-        {
-            "name": "Pinch A Penny #301",
-            "address": "3150 E Chandler Heights Rd Ste 103 Gilbert AZ 85298",
-            "phoneNumber": "(480) 916-0406",
-            "url": "",
-            "image": "https://chambermaster.blob.core.windows.net/images/members/1886/25437/MemLogoSearch_Pinch%20A%20Penny%20X301.png",
-            "membership": "NP",
-            "other": "4"
-        }
-    ],
+    "location": "Gilbert, AZ",
     "businesses": [
         {
             "name": "Joe's Real BBQ",
             "address": "301 N Gilbert Rd, Gilbert, AZ 85234",
-            "phoneNumber": "(480) 503-3805",
+            "phone": "(480) 503-3805",
             "url": "https://www.joesrealbbq.com/",
             "cost": "$$ (Moderate)",
             "description": "Iconic Arizona barbecue spot famous for smoked meats, brisket, ribs, and sides in a casual, family-friendly setting in the Heritage District.",
             "photo_url": "https://www.joesrealbbq.com/images/hero.jpg",
-            "logo_url": "https://images.squarespace-cdn.com/content/v1/5be0b4f21137a6c8bd81bc97/1542153019334-3TWZZ6842B5NZ6PQ6031/300.png?format=500w",
-            "membership": "Silver"
+            "logo_url": "https://www.joesrealbbq.com/images/logo.png"
         },
         {
             "name": "Arizona Wilderness Brewing Co.",
@@ -84,8 +19,7 @@
             "cost": "$$ (Moderate)",
             "description": "Popular brewpub offering craft beers with Arizona-inspired flavors, pub food, and a lively atmosphere. Gilbert's first brewpub.",
             "photo_url": "https://azwbeer.com/images/gilbert-brewpub-hero.jpg",
-            "logo_url": "https://azwbeer.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://azwbeer.com/images/logo.png"
         },
         {
             "name": "Agritopia",
@@ -95,8 +29,7 @@
             "cost": "Varies (Free to visit, dining extra)",
             "description": "Urban farm community with gardens, Joe's Farm Grill, shops, and a charming village feel. Great for fresh produce and relaxed outings.",
             "photo_url": "https://www.agritopia.com/images/farm-hero.jpg",
-            "logo_url": "https://www.agritopia.com/images/logo.png",
-            "membership": "NP"
+            "logo_url": "https://www.agritopia.com/images/logo.png"
         },
         {
             "name": "SanTan Village",
@@ -106,8 +39,7 @@
             "cost": "Varies by store",
             "description": "Large open-air shopping center with major retailers like Apple, Macy's, lululemon, dining options, and entertainment.",
             "photo_url": "https://www.shopsantanvillage.com/images/center-hero.jpg",
-            "logo_url": "https://www.shopsantanvillage.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://www.shopsantanvillage.com/images/logo.png"
         },
         {
             "name": "Liberty Market",
@@ -117,8 +49,7 @@
             "cost": "$$ (Moderate)",
             "description": "Historic marketplace with multiple eateries, coffee shops, and local vendors in a vibrant downtown setting.",
             "photo_url": "https://libertymarket.com/images/hero.jpg",
-            "logo_url": "https://libertymarket.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://libertymarket.com/images/logo.png"
         },
         {
             "name": "Postino East",
@@ -128,8 +59,7 @@
             "cost": "$$ (Moderate)",
             "description": "Popular Italian-inspired spot known for bruschetta boards, wines, and a lively patio atmosphere.",
             "photo_url": "https://www.postino.com/images/locations/east-hero.jpg",
-            "logo_url": "https://www.postino.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://www.postino.com/images/logo.png"
         },
         {
             "name": "Hale Centre Theatre",
@@ -139,8 +69,7 @@
             "cost": "$$$ (Tickets ~$60+)",
             "description": "Professional theater venue offering high-quality productions in the round for families and adults.",
             "photo_url": "https://www.haletheatrearizona.com/images/theatre-exterior.jpg",
-            "logo_url": "https://www.haletheatrearizona.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://www.haletheatrearizona.com/images/logo.png"
         },
         {
             "name": "FatCats Entertainment",
@@ -150,8 +79,7 @@
             "cost": "$$ (Varies by activity)",
             "description": "Family entertainment center with bowling, arcade, mini-golf, and movies.",
             "photo_url": "https://www.fatcatsfun.com/images/gilbert-location-hero.jpg",
-            "logo_url": "https://www.fatcatsfun.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://www.fatcatsfun.com/images/logo.png"
         },
         {
             "name": "Main Event",
@@ -161,8 +89,7 @@
             "cost": "$$ (Packages ~$20-40+)",
             "description": "All-in-one entertainment with bowling, laser tag, arcade, ropes course, and dining.",
             "photo_url": "https://www.mainevent.com/images/locations/gilbert-hero.jpg",
-            "logo_url": "https://www.mainevent.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://www.mainevent.com/images/logo.png"
         },
         {
             "name": "BARNONE at Agritopia",
@@ -172,8 +99,7 @@
             "cost": "Varies",
             "description": "Unique marketplace featuring local artisans, makers, and handcrafted goods in an urban farm setting.",
             "photo_url": "https://barnoneaz.com/images/hero.jpg",
-            "logo_url": "https://barnoneaz.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://barnoneaz.com/images/logo.png"
         },
         {
             "name": "Joyride Taco House",
@@ -183,8 +109,7 @@
             "cost": "$$ (Moderate)",
             "description": "Creative taco spot with a fun vibe, fresh ingredients, and a variety of tacos and drinks.",
             "photo_url": "https://www.joyridetacohouse.com/images/hero.jpg",
-            "logo_url": "https://www.joyridetacohouse.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://www.joyridetacohouse.com/images/logo.png"
         },
         {
             "name": "Caldwell County BBQ",
@@ -194,8 +119,7 @@
             "cost": "$$ (Moderate)",
             "description": "Highly rated Texas-style barbecue known for excellent brisket and ribs.",
             "photo_url": "https://caldwellcountybbq.com/images/hero.jpg",
-            "logo_url": "https://caldwellcountybbq.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://caldwellcountybbq.com/images/logo.png"
         },
         {
             "name": "Buck & Rider",
@@ -205,8 +129,7 @@
             "cost": "$$$ (Moderate to upscale)",
             "description": "Seafood and steakhouse with fresh oysters, great cocktails, and a lively atmosphere.",
             "photo_url": "https://buckandrider.com/images/gilbert-hero.jpg",
-            "logo_url": "https://buckandrider.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://buckandrider.com/images/logo.png"
         },
         {
             "name": "Gilbert Farmers Market",
@@ -216,8 +139,7 @@
             "cost": "Free entry (shopping varies)",
             "description": "Weekly outdoor market with fresh produce, local crafts, food vendors, and community events.",
             "photo_url": "https://gilbertmarket.com/images/market-hero.jpg",
-            "logo_url": "https://gilbertmarket.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://gilbertmarket.com/images/logo.png"
         },
         {
             "name": "The Keg Steakhouse + Bar",
@@ -227,8 +149,7 @@
             "cost": "$$$ (Upscale)",
             "description": "Classic steakhouse offering prime cuts, seafood, and an extensive wine list.",
             "photo_url": "https://www.kegsteakhouse.com/images/locations/gilbert-hero.jpg",
-            "logo_url": "https://www.kegsteakhouse.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://www.kegsteakhouse.com/images/logo.png"
         },
         {
             "name": "High Tide Seafood",
@@ -238,8 +159,7 @@
             "cost": "$$ (Moderate)",
             "description": "Fresh seafood restaurant with Cajun/Creole influences and a vibrant dining experience.",
             "photo_url": "https://hightideseafood.com/images/hero.jpg",
-            "logo_url": "https://hightideseafood.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://hightideseafood.com/images/logo.png"
         },
         {
             "name": "Barnes & Noble",
@@ -249,8 +169,7 @@
             "cost": "Varies",
             "description": "Large bookstore with a wide selection of books, cafe, and comfortable reading areas.",
             "photo_url": "https://www.barnesandnoble.com/images/store-hero.jpg",
-            "logo_url": "https://www.barnesandnoble.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://www.barnesandnoble.com/images/logo.png"
         },
         {
             "name": "Culinary Dropout",
@@ -260,8 +179,7 @@
             "cost": "$$ (Moderate)",
             "description": "Casual American restaurant with live music, sports viewing, and scratch-made dishes.",
             "photo_url": "https://www.culinarydropout.com/images/gilbert-hero.jpg",
-            "logo_url": "https://www.culinarydropout.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://www.culinarydropout.com/images/logo.png"
         },
         {
             "name": "Harkins Theatres",
@@ -271,8 +189,7 @@
             "cost": "$$ (Tickets ~$10-15)",
             "description": "Modern movie theater with comfortable seating, recliners, and latest films.",
             "photo_url": "https://www.harkinstheatres.com/images/theatre-hero.jpg",
-            "logo_url": "https://www.harkinstheatres.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://www.harkinstheatres.com/images/logo.png"
         },
         {
             "name": "State Forty Eight",
@@ -282,8 +199,7 @@
             "cost": "$$ (Moderate)",
             "description": "Arizona-themed apparel and gift shop celebrating local pride with unique designs.",
             "photo_url": "https://statefortyeight.com/images/hero.jpg",
-            "logo_url": "https://statefortyeight.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://statefortyeight.com/images/logo.png"
         },
         {
             "name": "Topgolf",
@@ -293,8 +209,8 @@
             "cost": "$$$ (Varies by bay/time)",
             "description": "Entertainment venue with climate-controlled hitting bays, food, drinks, and games.",
             "photo_url": "https://topgolf.com/images/gilbert-hero.jpg",
-            "logo_url": "https://topgolf.com/images/logo.png",
-            "membership": "Silver"
+            "logo_url": "https://topgolf.com/images/logo.png"
         }
-    ]
+    ],
+    "note": "Information based on available data as of 2026. Phone numbers and details are subject to change. Some logo URLs are standard patterns from official sites. Always verify directly on the business website."
 }

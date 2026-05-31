@@ -8,7 +8,9 @@ getCompanyData();
 async function getCompanyData() {
     const response = await fetch(info);
     const data = await response.json();
-    let silverGold = data.companies.filter(company => company.membership == 'Gold' || company.membership == 'Silver'); // filtered array=silver&gold
+    let silverGoldCompanies = data.companies.filter(company => company.membership == 'Gold' || company.membership == 'Silver'); // filtered array=silver&gold
+    let silverGoldBusinesses = data.businesses.filter(company => company.membership == 'Gold' || company.membership == 'Silver'); // filtered array=silver&gold
+    let silverGold = [...silverGoldBusinesses, ...silverGoldCompanies];
     silverGold = fisherYatesShuffle(silverGold);// shuffle order of companies
     displayCompanies(silverGold.slice(0, 3));
 }

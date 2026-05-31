@@ -1,0 +1,36 @@
+#allPlaces div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "desc"
+        "location";
+
+}
+
+#allPlaces div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#allPlaces div img {
+    width: 100%;
+    grid-area: photo;
+}
+
+#allPlaces div p {
+    margin: 1rem 10px;
+    grid-area: desc;
+}
+
+#allPlaces div address {
+    margin: 1rem 10px;
+    grid-area: location;
+}

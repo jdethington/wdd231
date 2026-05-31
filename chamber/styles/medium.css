@@ -55,6 +55,20 @@
 
     }
 
+    /* ******************** FUN ******************** */
+    #allPlaces div {
+
+        grid-template-areas:
+            "photo name"
+            "photo desc"
+            "photo location";
+
+    }
+
+    #allPlaces div img {
+        width: 300px;
+    }
+
     /* ******************** FOOTER ******************** */
     footer>div {
         display: flex;
