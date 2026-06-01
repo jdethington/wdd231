@@ -8,8 +8,8 @@ function displayItems(places) {
     places.forEach(x => {
         const theCard = document.createElement('div')
         const theFig = document.createElement('figure')
-        const figCap = document.createElement('figcaption')
-        figCap.innerText = x.name
+        // const figCap = document.createElement('figcaption')
+        // figCap.innerText = x.name
         const thePhoto = document.createElement('img')//figure tag for image
         thePhoto.src = `images/${x.photo}`
         thePhoto.alt = x.name
@@ -30,6 +30,11 @@ function displayItems(places) {
         theCard.appendChild(theDesc)
         const button = document.createElement('button') // button tag for learn more
         button.innerText = 'Learn More'
+        button.type = "button"
+        button.addEventListener('click', () => {
+            window.open(x.url, '_blank', 'noopener,noreferrer')
+        });
+        console.log(button)
         theCard.appendChild(button)
 
         showHere.appendChild(theCard)
@@ -45,7 +50,7 @@ const visitToday = document.querySelector('.lastVisit');
 let lastVisit = Number(localStorage.getItem('visit-time'));
 
 if (lastVisit !== 0) {
-    const lastVisitTime = (Date.now() - lastVisit) / (1000 * 60 * 24);
+    const lastVisitTime = (Date.now() - lastVisit) / (1000 * 60 * 60 * 24);
     // const lastVisitTime = 0;
     if (lastVisitTime < 1) {
         visitToday.textContent = `Back so soon! Awesome!`;

@@ -32,6 +32,11 @@
     --wayFinding: #eee;
 }
 
+/* ==================== DESERT BACKGROUND ==================== */
+body {
+    background-color: #f5f0e6;
+}
+
 header,
 footer {
     background-color: var(--background-color-light);
@@ -278,6 +283,11 @@ h2 {
 }
 
 /* -------------------- GRID* -------------------- */
+#cards {
+    min-height: 500px;
+    animation: fadeIn 1.5s ease forwards;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
@@ -535,6 +545,7 @@ dialog button {
 
 #thankYou {
     max-width: 300px;
+    min-height: 485px;
     display: grid;
     gap: 1rem;
     background-color: var(--wayFinding);
@@ -572,7 +583,11 @@ dialog button {
 }
 
 /* ******************** DISCOVERY ******************** */
-#allPlaces div {
+#allPlaces {
+    min-height: 500px;
+}
+
+#allPlaces>div {
     margin: 1rem;
     background-color: rgb(72, 190, 245);
     border-radius: 8px;
@@ -584,7 +599,7 @@ dialog button {
         "desc"
         "location"
         "learn";
-
+    animation: fadeIn 1.6s ease forwards;
 }
 
 #allPlaces div h2 {
@@ -600,6 +615,7 @@ dialog button {
 
 #allPlaces div figure img {
     width: 100%;
+    width: 300px;
     height: auto;
     box-shadow: 0 0 50px #333;
 }
@@ -648,7 +664,7 @@ footer {
     align-items: center;
     width: 44px;
     height: 44px;
-    border: var(--background-color-dark) solid 1px;
+    border: var(--border-light) solid 1px;
     border-radius: 8px;
 
     transition: background-color 0.25s ease;

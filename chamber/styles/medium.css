@@ -74,21 +74,28 @@
     #allPlaces div figure img {
         width: 300px;
         /* height: 200px; */
-        transition: all 1s ease-in 100ms;
+        /* transition: all 500ms ease; */
         /* transition-property: all; */
         /* transition-duration: 2s; */
-        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: ease; */
         /* transition-delay: 100ms; */
+        transition: transform 0.4s ease, filter 0.4s ease;
     }
 
     #allPlaces div img:hover {
         /* width: 110%; */
-        border-radius: 15px 150px;
+        /* border-radius: 15px 150px; */
         /* opacity: 0.5; */
         /* filter: blur(4px); */
         /* filter: blur(1px) grayscale(50%); */
         /* filter: contrast(50%); */
         /* transform: scaleX(-1); */
+
+        /* transform: translateY(-8px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); */
+
+        transform: scale(1.08);
+        filter: brightness(1.1);
     }
 
     /* ******************** FOOTER ******************** */
