@@ -1,0 +1,493 @@
+/* ---------- COLOR SCHEME ----------
+    Primary Color: __________;
+    Secondary Color: __________;#242938
+    Background Color: __________; #005BA7 #F19830 #131626
+    Text Color: __________;
+    Font Family: "Roboto", sans-serif;
+*/
+
+/* ==================== RESET & SITE-WIDE ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --background-color-dark: #333;
+    --background-color-light: #ccc;
+    --background-color-blue: rgb(72 190 245);
+    --background-color-skyblue: skyblue;
+
+    --font-color-light: #ddd;
+    --font-color-dark: #3D405B;
+
+    --border-light: rgb(0 0 0 / 10%);
+    --border-dark: #999;
+
+    --hover: #FFA600;
+    /* --hover-light: #FFA6007F; */
+    --hover-light: rgba(72, 190, 245, 0.5);
+    --wayFinding: #eee;
+}
+
+/* ==================== DESERT BACKGROUND ==================== */
+body {
+    background-color: #f5f0e6;
+}
+
+/* ==================== HEADER & NAV ==================== */
+header,
+footer {
+    background-color: var(--background-color-light);
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 44px minmax(216px, auto) 44px;
+    align-items: center;
+    padding: 1rem 0 1rem 1rem;
+}
+
+header img {
+    height: 44px;
+    width: auto;
+}
+
+header span {
+    font-size: x-large;
+    padding-left: 1rem;
+}
+
+/* ******************** HAMBURGER ******************** */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--font-color-dark);
+    cursor: pointer;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 1.5rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2.5rem;
+}
+
+/* ******************** NAVIGATION ******************** */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation a {
+    text-align: center;
+    min-width: 110px;
+    display: block;
+    padding: .88rem 10px;
+    color: var(--font-color-dark);
+    text-decoration: none;
+    font-size: large;
+    border-bottom: solid 1px var(--background-color-light);
+    transition: background-color 0.5s ease;
+}
+
+.navigation li.current {
+    background-color: var(--wayFinding);
+}
+
+.navigation a:hover {
+    background-color: var(--hover-light);
+}
+
+/* ==================== MAIN ==================== */
+/* ----- h1 tags ----- */
+h1 {
+    margin-left: 1rem;
+}
+
+/* -------------------- h2 -------------------- */
+h2 {
+    color: var(--font-color-dark);
+    padding: .5rem;
+    text-align: center;
+}
+
+/* ----- a tags ----- */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ==================== HOME ==================== */
+/* -------------------- HERO -------------------- */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.key {
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+}
+
+.key a {
+    padding: .85rem;
+    border-radius: 10px;
+    background-color: var(--background-color-blue);
+}
+
+/* ******************** HOME class, events, weather, forecast ******************** */
+.home {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 1rem;
+}
+
+.home div {
+    overflow: hidden;
+}
+
+.events,
+.weather,
+.forecast {
+    min-height: 220px;
+    background-color: var(--background-color-blue);
+    border-radius: 10px;
+}
+
+.events p,
+.weather>div,
+.forecast>div {
+    padding: 1rem;
+}
+
+.home h2 {
+    background-color: var(--background-color-dark);
+    color: var(--wayFinding);
+    text-align: center;
+}
+
+/* -------------------- CURRENT WEATHER -------------------- */
+.weather {
+    animation: fadeIn 5.6s ease forwards;
+}
+
+/* grid-template-areas: */
+.weather>div {
+    display: grid;
+    grid-template-areas:
+        "weatherImg weatherInfo"
+    ;
+}
+
+.weather img {
+    width: 75px;
+    background-color: var(--background-color-skyblue);
+    border: 1px solid var(--border-light);
+    border-radius: 15px;
+}
+
+.weatherImg {
+    grid-area: weatherImg;
+}
+
+.weatherInfo {
+    grid-area: weatherInfo;
+}
+
+/* .weather>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.weather img {
+    max-width: 75px;
+    background-color: var(--background-color-skyblue);
+    border: 1px solid var(--border-light);
+    border-radius: 15px;
+}
+
+.weatherImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.weatherInfo {
+    font-size: smaller;
+}
+
+.weather p {
+    margin: 5px 0;
+}
+
+.weather #description {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.weather #temperature {
+    font-size: 2rem;
+    font-weight: bold;
+} */
+
+/* -------------------- FORECAST -------------------- */
+.forecast>div {
+    display: grid;
+    padding: 0;
+}
+
+.forecast-day {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+}
+
+.forecast-day img {
+    width: 45px;
+    height: auto;
+    background-color: var(--background-color-skyblue);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+}
+
+/* ******************** Spotlight ******************** */
+.spotlightMembers section {
+    border-radius: 10px;
+}
+
+.spotlightMembers img {
+    width: 45px;
+    height: auto;
+}
+
+/* ******************** Grid/List buttons ******************** */
+.listGrid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.listGrid button {
+    padding: .7rem 2rem;
+}
+
+/* ==================== DISCOVERY SECTION ==================== */
+#allPlaces {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 1.5rem;
+    margin: 10px 16px;
+    min-height: 700px;
+}
+
+#allPlaces>div {
+    background-color: rgb(72, 190, 245);
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "desc"
+        "location"
+        "learn";
+    min-height: 460px;
+}
+
+#allPlaces div h2 {
+    grid-area: name;
+    margin: 1rem 10px;
+}
+
+#allPlaces div figure {
+    grid-area: photo;
+    display: flex;
+    justify-content: center;
+}
+
+#allPlaces div figure img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 0 50px #333;
+    transition: all 1s ease-in 100ms;
+}
+
+#allPlaces>div:hover img {
+    border-radius: 15px 150px;
+}
+
+#allPlaces div p {
+    grid-area: desc;
+    margin: 1rem 10px;
+}
+
+#allPlaces div address {
+    grid-area: location;
+    margin: 1rem 10px;
+}
+
+#allPlaces div button {
+    grid-area: learn;
+    margin: 1rem 10px;
+    padding: .8rem;
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 50%);
+    cursor: pointer;
+}
+
+.lastVisit {
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 1.1rem 1.5rem;
+    padding: 0.75rem;
+    background-color: rgba(241, 152, 48, 0.1);
+    border-radius: 10px;
+    color: #2c3e50;
+}
+
+/* ==================== FOOTER ==================== */
+footer>div {
+    padding: 1rem;
+}
+
+.social {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-light) solid 1px;
+    border-radius: 8px;
+    transition: background-color 0.25s ease;
+}
+
+.social img {
+    width: 33px;
+    height: 33px;
+}
+
+.social a:hover {
+    background-color: var(--hover-light);
+}
+
+.date {
+    padding-top: 1rem;
+    font-size: small;
+}
+
+/* ==================== FORMS & MEMBERSHIP ==================== */
+.join {
+    display: grid;
+}
+
+form label {
+    display: block;
+    font-size: .8rem;
+    color: var(--font-color-dark);
+    padding-top: .5rem;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=email],
+form select,
+form textarea {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid var(--border-dark);
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    width: 100%;
+}
+
+input:required {
+    border-left-color: #d70000;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-left-color: var(--hover);
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: var(--background-color-blue);
+    border-radius: 10px;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.membership {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.membership div {
+    padding: 1rem;
+    background-color: #FFA600;
+    border: 1px solid var(--background-color-dark);
+    border-radius: 8px;
+}
+
+/* ==================== THANK YOU & MODAL ==================== */
+.thankYou {
+    padding: 0 0 0 1.5rem;
+}
+
+dialog {
+    background-color: var(--background-color-blue);
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 3rem var(--font-color-dark);
+}
+
+/* ==================== KEY & GENERAL HELPERS ==================== */
+.key a {
+    padding: .85rem;
+    border-radius: 10px;
+    background-color: var(--background-color-blue);
+}

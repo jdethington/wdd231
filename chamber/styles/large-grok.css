@@ -1,0 +1,74 @@
+/* ==================== TABLET & UP ==================== */
+@media only screen and (min-width: 35rem) {
+
+    header div,
+    main,
+    nav,
+    footer>div {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 1rem 1.2rem;
+    }
+
+    .home {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .key {
+        bottom: 35px;
+        right: 20px;
+    }
+
+    .events {
+        grid-column: span 2;
+    }
+
+    .join {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Discovery - Medium */
+    #allPlaces>div {
+        grid-template-areas:
+            "photo name"
+            "photo desc"
+            "learn location";
+    }
+
+    #allPlaces figure {
+        display: block;
+    }
+}
+
+/* ==================== LARGE DESKTOP ==================== */
+@media only screen and (min-width: 64rem) {
+
+    #allPlaces {
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    }
+
+    #allPlaces>div {
+        grid-template-areas:
+            "name desc"
+            "photo desc"
+            "photo location"
+            "photo learn";
+    }
+}

@@ -22,7 +22,7 @@
     .navigation {
         display: block;
         /* padding-left: 10px; */
-        border-bottom: solid 1px #eee;
+        /* border-bottom: solid 1px #eee; */
     }
 
     .navigation ul {
@@ -35,6 +35,11 @@
 
     .home {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .navigation li.current {
+        /* border-bottom-left-radius: 10px; */
+        border-bottom-right-radius: 20px;
     }
 
     /* ******************** MAIN ******************** */
@@ -56,15 +61,13 @@
     }
 
     /* ******************** FUN ******************** */
-    #allPlaces div {
+    #allPlaces>div {
 
         grid-template-areas:
             "photo name"
             "photo desc"
-            /* "photo location" */
             "learn location"
         ;
-
     }
 
     #allPlaces div figure {
@@ -73,27 +76,10 @@
 
     #allPlaces div figure img {
         width: 300px;
-        /* height: 200px; */
-        /* transition: all 500ms ease; */
-        /* transition-property: all; */
-        /* transition-duration: 2s; */
-        /* transition-timing-function: ease; */
-        /* transition-delay: 100ms; */
         transition: transform 0.4s ease, filter 0.4s ease;
     }
 
     #allPlaces div img:hover {
-        /* width: 110%; */
-        /* border-radius: 15px 150px; */
-        /* opacity: 0.5; */
-        /* filter: blur(4px); */
-        /* filter: blur(1px) grayscale(50%); */
-        /* filter: contrast(50%); */
-        /* transform: scaleX(-1); */
-
-        /* transform: translateY(-8px);
-        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); */
-
         transform: scale(1.08);
         filter: brightness(1.1);
     }
