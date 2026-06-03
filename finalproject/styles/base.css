@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Roboto:wght@400;500&amp;display=swap');
+
+/* ******************** SITE WIDE ******************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: 'Roboto', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    /* background-color: var(--cream); */
+}
+
+/* Complementary Palette */
+/* :root {
+    --primary-0: #332100;
+    --primary-100: #996300;
+    --primary-200: #ffa600;
+    --primary-300: #ffc966;
+    --primary-400: #ffedcc;
+    --secondary-0: #001233;
+    --secondary-100: #003699;
+    --secondary-200: #0059ff;
+    --secondary-300: #669cff;
+    --secondary-400: #ccdeff;
+    --accent-0: #28570f;
+    --accent-100: #51ad1f;
+    --accent-200: #84e052;
+    --accent-300: #c1f0a8;
+    --accent-400: #e0f7d4;
+    --neutral-0: #17191c;
+    --neutral-100: #3c4048;
+    --neutral-200: #6b7280;
+    --neutral-300: #a0a6b0;
+    --neutral-400: #d8dadf;
+
+    --cheese-yellow: #FFCC33;
+    --cream: #F8F1E3;
+    --earth-brown: #5C3311;
+    --fresh-green: #6B8E23;
+    --text-dark: #2C2C2C;
+} */
+
+/* Complementary Palette */
+:root {
+    /* Primary Colors */
+    --primary-0: #664d00;
+    --primary-100: #cc9900;
+    --primary-200: #ffcc33;
+    --primary-300: #ffe699;
+    --primary-400: #fff2cc;
+
+    /* Secondary Colors */
+    --secondary-0: #001a66;
+    --secondary-100: #0033cc;
+    --secondary-200: #3366ff;
+    --secondary-300: #99b3ff;
+    --secondary-400: #ccd9ff;
+
+    /* Accent Colors */
+    --accent-0: #21570f;
+    --accent-100: #42ad1f;
+    --accent-200: #75e052;
+    --accent-300: #baf0a8;
+    --accent-400: #ddf7d4;
+
+    /* Neutral Colors */
+    --neutral-0: #17191c;
+    --neutral-100: #3c4048;
+    --neutral-200: #6b7280;
+    --neutral-300: #a0a6b0;
+    --neutral-400: #d8dadf;
+
+    --cheese-yellow: #FFCC33;
+    --cream: #F8F1E3;
+    --earth-brown: #5C3311;
+    --fresh-green: #6B8E23;
+    --text-dark: #2C2C2C;
+}
+
+/* ******************** HEADER ******************** */
+body {
+    font-family: 'Roboto', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--cream);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, var(--earth-brown), var(--primary-0));
+    background-color: none;
+    color: var(--cream);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--cream);
+}
+
+h2,
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--earth-brown);
+}
+
+/* ******************** NAVIGATION **************** */
+nav {
+    background: var(--cheese-yellow);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ******************** MAIN ********************** */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ******************** FOOTER ******************** */
+footer {
+    background: var(--earth-brown);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}

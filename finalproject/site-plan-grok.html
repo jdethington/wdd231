@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Website Plan for Jakes Legendairy Cheese - Handcrafted artisan cheese from a small farm.">
+    <meta name="author" content="Your Name">
+    <title>Site Plan | Jakes Legendairy Cheese</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Roboto:wght@400;500&amp;display=swap');
+
+        :root {
+            --cheese-yellow: #FFCC33;
+            --cream: #F8F1E3;
+            --earth-brown: #5C3311;
+            --fresh-green: #6B8E23;
+            --text-dark: #2C2C2C;
+        }
+
+        body {
+            font-family: 'Roboto', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--cream);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--earth-brown), #8B4513);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: var(--earth-brown);
+        }
+
+        h1 {
+            color: var(--cream);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .accent {
+            color: var(--cheese-yellow);
+        }
+
+        .color-swatch {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            border: 3px solid white;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+
+        .wireframe {
+            border: 3px solid #333;
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        .mobile {
+            max-width: 380px;
+            margin: 0 auto;
+            border: 12px solid #333;
+            border-radius: 40px;
+            padding: 20px 15px;
+            background: white;
+        }
+
+        footer {
+            background: var(--earth-brown);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        nav {
+            background: var(--cheese-yellow);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin:0; font-size: 2.8rem;">🧀 Jakes Legendairy Cheese</h1>
+        <p style="margin: 0.5rem 0 0; font-size: 1.3rem; opacity: 0.95;">Site Plan Document</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sitenname">Site Name</a></li>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#scenarios">Scenarios</a></li>
+            <li><a href="#colors">Color Scheme</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#wireframes">Wireframes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Site Name -->
+        <section id="sitenname">
+            <h2>Site Name</h2>
+            <p><strong>Jakes Legendairy Cheese</strong></p>
+            <p><strong>Reason for selection:</strong> The name is a clever play on "Legendary" and "Dairy," perfectly
+                capturing the premium, handcrafted quality of the cheese while being memorable and brandable. It
+                reflects the personal story behind the product — cheese made by Jake and sold at farmers’ markets.</p>
+        </section>
+
+        <!-- Site Purpose -->
+        <section id="purpose">
+            <h2>Site Purpose</h2>
+            <p>The website serves as both an educational resource and an online presence for Jakes Legendairy Cheese. It
+                provides detailed information about artisan cheese making, the story behind the brand, product
+                offerings, and practical resources for cheese enthusiasts.</p>
+            <p>Key content includes:</p>
+            <ul>
+                <li>The cheese making process (from milk to wheel)</li>
+                <li>Product catalog with flavor profiles</li>
+                <li>Recipes and pairing suggestions</li>
+                <li>Farm stories and behind-the-scenes content</li>
+                <li>Market schedule and contact information</li>
+                <li>Educational articles about cheese</li>
+            </ul>
+        </section>
+
+        <!-- Scenarios -->
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div>
+                    <h3>Scenario 1</h3>
+                    <p><strong>Question:</strong> "How is Jakes Legendairy Cheese made? Is it pasteurized?"</p>
+                    <p><em>Answer provided by site:</em> Detailed step-by-step cheese making process with photos and
+                        safety information.</p>
+                </div>
+                <div>
+                    <h3>Scenario 2</h3>
+                    <p><strong>Question:</strong> "What cheeses are available right now and what do they taste like?"
+                    </p>
+                    <p><em>Answer provided by site:</em> Dynamic product grid with flavor notes, aging details, and
+                        seasonal availability.</p>
+                </div>
+                <div>
+                    <h3>Scenario 3</h3>
+                    <p><strong>Question:</strong> "Where can I buy Jake’s cheese or visit him at the farmers market?"
+                    </p>
+                    <p><em>Answer provided by site:</em> Market schedule, online order form, and contact information.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color Scheme -->
+        <section id="colors">
+            <h2>Color Scheme</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+                <div>
+                    <div class="color-swatch" style="background: #FFCC33;"></div>
+                    <p><strong>Cheese Yellow</strong> — #FFCC33<br>
+                        <em>Used for:</em> Accents, buttons, headings, navigation
+                    </p>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background: #F8F1E3;"></div>
+                    <p><strong>Cream</strong> — #F8F1E3<br>
+                        <em>Used for:</em> Backgrounds, content areas
+                    </p>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background: #5C3311;"></div>
+                    <p><strong>Earth Brown</strong> — #5C3311<br>
+                        <em>Used for:</em> Headers, footers, primary text
+                    </p>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background: #6B8E23;"></div>
+                    <p><strong>Fresh Green</strong> — #6B8E23<br>
+                        <em>Used for:</em> Success messages, links, farm-related accents
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section id="typography">
+            <h2>Typography</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div>
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 0.5rem;">Playfair
+                        Display</h3>
+                    <p style="font-size: 0.95rem; color: #666;">Used for: Headings (H1, H2, H3)</p>
+                    <p style="font-family: 'Playfair Display', serif;">"The art of cheese making is truly legendary."
+                    </p>
+                </div>
+                <div>
+                    <h3
+                        style="font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 1.5rem; margin-bottom: 0.5rem;">
+                        Roboto</h3>
+                    <p style="font-size: 0.95rem; color: #666;">Used for: Body text, navigation, paragraphs</p>
+                    <p>Our cheeses are crafted with care using traditional methods passed down through generations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wireframes -->
+        <section id="wireframes">
+            <h2>Home Page Wireframes</h2>
+
+            <h3 style="text-align:center;">Desktop / Tablet View (≥768px)</h3>
+            <div class="wireframe">
+                <div
+                    style="background: #ddd; height: 80px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                    Header + Logo + Navigation</div>
+
+                <div style="display: flex; gap: 30px;">
+                    <div style="flex: 7;">
+                        <div
+                            style="background: #ddd; height: 320px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                            Hero Image: Wheel of Cheese + Tagline
+                        </div>
+                        <div
+                            style="background: #ddd; height: 140px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center;">
+                            Welcome Text + "Our Story" CTA
+                        </div>
+                    </div>
+
+                    <div style="flex: 3; background: #eee; padding: 15px;">
+                        <div
+                            style="height: 200px; background: #ddd; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
+                            Featured Cheese
+                        </div>
+                        <div
+                            style="height: 160px; background: #ddd; display: flex; align-items: center; justify-content: center;">
+                            Market Dates
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    style="margin-top: 30px; background: #ddd; height: 180px; display: flex; align-items: center; justify-content: center;">
+                    Product Grid (3–4 cards)
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin-top: 3rem;">Mobile View (320–480px)</h3>
+            <div class="mobile">
+                <div
+                    style="background: #ddd; height: 60px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">
+                    Header + Hamburger Menu
+                </div>
+
+                <div
+                    style="background: #ddd; height: 220px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center;">
+                    Hero Image
+                </div>
+
+                <div
+                    style="background: #ddd; height: 90px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.95rem;">
+                    Welcome + CTA Button
+                </div>
+
+                <div
+                    style="background: #ddd; height: 110px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
+                    Featured Cheese Card
+                </div>
+
+                <div
+                    style="background: #ddd; height: 140px; display: flex; align-items: center; justify-content: center;">
+                    Latest Products (stacked)
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jakes Legendairy Cheese • Site Plan Document</p>
+        <p>This document will evolve as the project develops.</p>
+    </footer>
+</body>
+
+</html>

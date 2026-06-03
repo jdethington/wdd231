@@ -17,7 +17,8 @@
 :root {
     --background-color-dark: #333;
     --background-color-light: #ccc;
-    --background-color-blue: rgb(72 190 245);
+    /* --background-color-blue: rgb(72 190 245); */
+    --background-color-blue: rgb(0 89 255);
     --background-color-skyblue: skyblue;
 
     --font-color-light: #ddd;
@@ -30,6 +31,9 @@
     /* --hover-light: #FFA6007F; */
     --hover-light: rgba(72, 190, 245, 0.5);
     --wayFinding: #ccc;
+
+    --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    --box-shadow2: 0 0 50px #333;
 }
 
 /* ==================== DESERT BACKGROUND ==================== */
@@ -67,15 +71,16 @@ header span {
     color: var(--font-color-dark);
     cursor: pointer;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .hamburger::before {
     content: "\2630";
-    font-size: 1.5rem;
+    font-size: 2.4rem;
 }
 
 .hamburger.show::before {
+    font-size: 2.5rem;
     content: "\00D7";
 }
 
@@ -636,16 +641,16 @@ dialog button {
     color: var(--background-color-dark);
 }
 
-/* ******************** DISCOVERY ******************** */
+/* ******************** DISCOVER ******************** */
 #allPlaces {
     min-height: 600px;
 }
 
 #allPlaces>div {
     margin: 1rem;
-    background-color: rgb(72, 190, 245);
+    background-color: var(--background-color-blue);
     /* background-color: #fffef9; */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--box-shadow);
     border-radius: 10px;
     overflow: hidden;
     display: grid;
@@ -673,7 +678,7 @@ dialog button {
     width: 100%;
     /* width: 300px; */
     height: auto;
-    box-shadow: 0 0 50px #333;
+    box-shadow: var(--box-shadow2);
 }
 
 #allPlaces div p {
