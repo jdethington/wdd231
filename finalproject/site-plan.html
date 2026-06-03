@@ -15,9 +15,16 @@
     <meta property="og:image" content="">
     <meta property="og:url" content="https://jdethington.github.io/wdd231/finalproject/site-plan.html">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="styles/base.css">
+    <script type="module" src="scripts/footer-date.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -45,6 +52,8 @@
             <p>🧀 Jakes LegenDairy Cheese</p>
             <ul>
                 <li>A website about Jakes Legendairy Cheese.</li>
+                <li>Jakes Legendairy Cheese is a brand that I have used to promote and sell cheese that I
+                    personally make and have sold at a farmers’ market. </li>
                 <li>jakeslegendairycheese.com available for purchase</li>
             </ul>
         </section>
@@ -57,8 +66,8 @@
                 <!-- <li>A website about Jakes Legendairy Cheese.</li> -->
                 <li>The cheese making process (from milk to wheel)</li>
                 <li>Product catalog with flavor profiles</li>
-                <li>Recipes and pairing suggestions</li>
-                <li>Farm stories and behind-the-scenes content</li>
+                <li>Recipes suggestions</li>
+                <li>Farm stories from our family</li>
                 <li>Market schedule and contact information</li>
                 <li>Educational articles about cheese</li>
 
@@ -71,9 +80,8 @@
             <div>
                 <div>
                     <h3>Scenario 1</h3>
-                    <p><strong>Question:</strong> "How is Jakes Legendairy Cheese made? Is it pasteurized?"</p>
-                    <p><em>Answer provided by site:</em> Detailed step-by-step cheese making process with photos and
-                        safety information.</p>
+                    <p><strong>Question:</strong> "How is Jakes Legendairy Cheese made?"</p>
+                    <p><em>Answer provided by site:</em> Detailed step-by-step cheese making process with photos.</p>
                 </div>
                 <div>
                     <h3>Scenario 2</h3>
@@ -146,12 +154,12 @@
             <h2>Home Page Wireframes</h2>
 
             <h3>Desktop / Tablet View</h3>
-            <div class="wireframe">
+            <div class="desktop">
                 <img src="images/wireframe-desktop.webp" alt="wireframe for desktop">
             </div>
 
             <h3>Mobile View</h3>
-            <div class="wireframe">
+            <div class="mobile">
                 <img src="images/wireframe-mobile.webp" alt="wireframe for mobile">
             </div>
 
@@ -160,7 +168,24 @@
     </main>
 
     <footer>
-
+        <div>
+            <!-- <div class="social">
+                <a href="https://github.com/jdethington" target="_blank"><img src="images/socialmedia/github.svg"
+                        alt="github"></a>
+                <a href="https://www.linkedin.com/in/jdethington/" target="_blank"><img
+                        src="images/socialmedia/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.facebook.com/jacob.ethington.50" target="_blank"><img
+                        src="images/socialmedia/facebook.svg" alt="facebook"></a>
+                <a href="https://x.com/home" target="_blank"><img src="images/socialmedia/twitter-x.svg"
+                        alt="twitter-X"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="images/socialmedia/youtube.svg"
+                        alt="youtube"></a>
+            </div> -->
+            <div class="date">
+                <p><span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona, USA</p>
+                <p><span id="lastModified"></span></p>
+            </div>
+        </div>
     </footer>
 
 </body>
