@@ -5,11 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Roboto", sans-serif; */
-    font-family: 'Roboto', system-ui, sans-serif;
-    line-height: 1.6;
-    color: var(--text-dark);
-    /* background-color: var(--cream); */
+    font-family: "Roboto", sans-serif;
 }
 
 /* Complementary Palette */
@@ -81,16 +77,13 @@
 
 /* ******************** HEADER ******************** */
 body {
-    font-family: 'Roboto', system-ui, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--cream);
-    margin: 0;
-    padding: 0;
 }
 
 header {
-    background: linear-gradient(135deg, var(--earth-brown), var(--primary-0));
+    background: linear-gradient(to right, var(--earth-brown) 60%, var(--cheese-yellow)90%, var(--fresh-green) 100%);
     background-color: none;
     color: var(--cream);
     text-align: center;
@@ -110,19 +103,26 @@ h3 {
 /* ******************** NAVIGATION **************** */
 nav {
     background: var(--cheese-yellow);
-    padding: 1rem;
+    /* padding: 1rem; */
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
+nav li:hover {
+    background-color: var(--primary-400);
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
+}
+
+nav li {
+    padding: 1rem;
 }
 
 nav a {
@@ -135,15 +135,94 @@ nav a {
 main {
     max-width: 1100px;
     margin: 2rem auto;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
 }
 
 section {
     background: white;
     margin-bottom: 2.5rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section ul {
+    margin-left: 2rem;
+}
+
+#color>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+#color>div>div,
+#scenarios>div>div,
+#typography>div>div,
+#wireframe>div {
+    /* border: 1px solid var(--cream); */
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--neutral-400);
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+#scenarios>div>div p {
+    padding: .5rem 0;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 3px solid white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.cheese {
+    background-color: var(--cheese-yellow);
+}
+
+.cream {
+    background-color: var(--cream);
+}
+
+.earth {
+    background-color: var(--earth-brown);
+}
+
+.fresh {
+    background-color: var(--fresh-green);
+}
+
+#typography,
+#typography>div {
+    display: grid;
+}
+
+#scenarios>div,
+#typography>div {
+    display: grid;
+    gap: 1rem;
+}
+
+#wireframe h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+#wireframe>div {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    max-width: 770px;
+
 }
 
 /* ******************** FOOTER ******************** */
