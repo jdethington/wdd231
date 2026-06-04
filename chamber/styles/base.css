@@ -17,9 +17,10 @@
 :root {
     --background-color-dark: #333;
     --background-color-light: #ccc;
-    /* --background-color-blue: rgb(72 190 245); */
-    --background-color-blue: rgb(0 89 255);
+    --background-color-blue: rgb(72 190 245);
+    /* --background-color-blue: rgb(0 89 255); */
     --background-color-skyblue: skyblue;
+    --background-color-body: #f5f0e6;
 
     --font-color-light: #ddd;
     --font-color-dark: #3D405B;
@@ -29,8 +30,8 @@
 
     --hover: #FFA600;
     /* --hover-light: #FFA6007F; */
-    --hover-light: rgba(72, 190, 245, 0.5);
-    --wayFinding: #ccc;
+    --hover-light: rgb(98, 200, 248);
+    --wayFinding: #cccccc80;
 
     --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     --box-shadow2: 0 0 50px #333;
@@ -38,7 +39,7 @@
 
 /* ==================== DESERT BACKGROUND ==================== */
 body {
-    background-color: #f5f0e6;
+    background-color: var(--background-color-body);
 }
 
 /* ==================== HEADER & NAV ==================== */
