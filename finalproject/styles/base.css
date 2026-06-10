@@ -57,8 +57,13 @@
     --hover-light: #ffcc33;
 }
 
+main {
+    padding-left: .75rem;
+}
+
 /* ====================  BACKGROUND ==================== */
-body {
+body,
+nav {
     background-color: var(--background-light);
 }
 
@@ -73,8 +78,6 @@ footer {
 /* font-family: 'Playfair Display', Georgia, serif; */
 /* color: var(--cream); */
 /* } */
-
-/* ******************** HEADER ******************** */
 
 /* ==================== HEADER & NAV ==================== */
 header,
@@ -161,6 +164,7 @@ header span {
 /* ******************** FOOTER ******************** */
 footer>div {
     padding: 0.75rem;
+    text-align: center;
 }
 
 footer>div>a {
@@ -204,4 +208,10 @@ footer>div>a {
 footer p {
     padding-bottom: 5px;
     font-size: small;
+}
+
+/* ==================== HERO ==================== */
+picture>img {
+    width: 100%;
+    height: auto;
 }
