@@ -704,7 +704,7 @@ dialog button {
 
 #allPlaces button:hover {
     background-color: var(--hover);
-    transform: scale(1.04);
+    transform: scale(1.03);
 }
 
 .lastVisit {

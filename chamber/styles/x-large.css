@@ -11,10 +11,10 @@
     #allPlaces div {
 
         grid-template-areas:
-            "name desc"
+            "name name"
             "photo desc"
             "photo location"
-            "photo learn "
+            "learn learn "
         ;
 
     }
