@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Playing</title>
+    <meta name="description"
+        content="Welcome to Jakes LegenDairy Cheese. Find out more about us, what we do, where we will be.">
+    <meta name="author" content="Jacob Dwayne Ethington">
+
+    <!-- <meta property="og:title" content="Jakes LegenDairy Cheese">
+    <meta property="og:description"
+        content="Welcome to Jakes LegenDairy Cheese. Find out more about us, what we do, where we will be.">
+    <meta property="og:image" content="images/favicon.ico">
+    <meta property="og:url" content="https://jdethington.github.io/wdd231/finalproject/index.html"> -->
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/nav-play.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <!-- <link rel="stylesheet" href="styles/large.css"> -->
+
+    <script type="module" src="scripts/nav-playing.js"></script>
+    <script type="module" src="scripts/footer-date.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <!-- <img src="images/cheese.svg" alt="Logo for Jakes Cheese"> -->
+                <img src="images/logo-square.jpg" alt="Logo for Jakes Cheese" width="60" height="60">
+                <span>Jakes LegenDairy Cheese</span>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button id="hamburger" class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav id="nav-bar" class="navigation">
+                <ul class="nav-links">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="products.html">Our Cheese</a></li>
+                    <li><a href="join.html">Find Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu (appears below header) -->
+        <div id="mobileMenu" class="mobile-menu">
+            <ul class="nav-links">
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="products.html">Our Cheese</a></li>
+                <li><a href="join.html">Find Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div>
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/dairy-extra-wide.webp">
+                <source media="(min-width: 35rem)" srcset="images/tractor-cows-16x9.webp">
+                <img src="images/tractor-cows-3x2.webp" alt="tractor, hay, and cows">
+            </picture>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <a href="http://#" target="_blank">Final Project Video</a>
+            <div class="social">
+                <a href="https://www.facebook.com/jacob.ethington.50" target="_blank"><img
+                        src="images/socialmedia/facebook.svg" loading="lazy" alt="facebook"></a>
+                <a href="https://x.com/home" target="_blank"><img src="images/socialmedia/twitter-x.svg" loading="lazy"
+                        alt="twitter-X"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="images/socialmedia/youtube.svg"
+                        loading="lazy" alt="youtube"></a>
+            </div>
+            <div class="date">
+                <p><span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona, USA</p>
+                <p><span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
