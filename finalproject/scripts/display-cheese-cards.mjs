@@ -27,32 +27,37 @@ const displayCheeseCard = (cheeses) => {
         description.textContent = `${cheese.description}`;
         // description.textContent = `Description: ${cheese.description}`;
 
-        // // cheese flavor
-        // const flavor = document.createElement('p');
-        // flavor.setAttribute('class', 'flavor');
+        // cheese flavor
+        const flavor = document.createElement('p');
+        flavor.setAttribute('class', 'flavor');
+        flavor.textContent = `${cheese.flavor}`;
         // flavor.textContent = `Flavor: ${cheese.flavor}`;
 
-        // // cheese color
-        // const color = document.createElement('p');
-        // color.setAttribute('class', 'color');
-        // color.textContent = `Flavor: ${cheese.color}`;
+        // cheese color
+        const color = document.createElement('p');
+        color.setAttribute('class', 'color');
+        color.textContent = `Flavor: ${cheese.color}`;
 
-        // // cheese texture
-        // const texture = document.createElement('p');
-        // texture.setAttribute('class', 'texture');
-        // texture.textContent = `Flavor: ${cheese.texture}`;
+        // cheese texture
+        const texture = document.createElement('p');
+        texture.setAttribute('class', 'texture');
+        texture.textContent = `Flavor: ${cheese.texture}`;
 
-        // // cheese pairing
-        // const pairing = document.createElement('p');
-        // pairing.setAttribute('class', 'pairing');
-        // pairing.textContent = `Flavor: ${cheese.pairing}`;
+        // cheese pairing
+        const pairing = document.createElement('p');
+        pairing.setAttribute('class', 'pairing');
+        pairing.textContent = `Flavor: ${cheese.pairing}`;
 
-
-
+        // add info to card
         card.appendChild(name);
         card.appendChild(image);
         card.appendChild(description);
+        card.appendChild(flavor);
+        // card.appendChild(color);
+        // card.appendChild(texture);
+        // card.appendChild(pairing);
 
+        // add card to display
         cards.appendChild(card);
     });
 }

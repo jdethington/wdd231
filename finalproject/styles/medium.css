@@ -45,6 +45,7 @@
         grid-template-areas:
             "image name"
             "image desc"
+            " image flavor"
         ;
     }
 
@@ -53,6 +54,10 @@
     }
 
     p.description {
+        display: block;
+    }
+
+    p.flavor {
         display: block;
     }
 }

@@ -290,6 +290,7 @@ button.cheeseSelected {
         "name"
         "image"
         "desc"
+        "flavor"
     ;
     animation: fadeIn 1.6s ease forwards;
 }
@@ -314,6 +315,12 @@ button.cheeseSelected {
 
 p.description {
     grid-area: desc;
+    padding: 1rem;
+    display: none;
+}
+
+p.flavor {
+    grid-area: flavor;
     padding: 1rem;
     display: none;
 }
