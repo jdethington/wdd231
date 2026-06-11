@@ -11,6 +11,7 @@
         margin: 0 auto;
     }
 
+    /* ******************** NAVIGATION ******************** */
     header {
         grid-template-columns: 44px auto;
     }

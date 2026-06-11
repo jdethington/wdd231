@@ -3,7 +3,7 @@ import { courses } from "../data/courses.mjs";
 
 createCourseCard(courses);
 
-//  --------------------  Course Selected ------------------------
+//  --------------------  Course Button Selected ------------------------
 const courseButton = document.querySelector('.course-button');
 courseButton.addEventListener('click', (e) => {
     const button = e.target.closest('button');

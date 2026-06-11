@@ -238,6 +238,7 @@ picture>img {
     padding: 1.5rem;
 }
 
+
 .cheeseButton {
     margin: 1rem .75rem 2rem 0.75rem;
     display: flex;
@@ -261,6 +262,11 @@ picture>img {
     background-color: var(--background-cheese);
     color: var(--font-dark);
     font-weight: bold;
+}
+
+button.cheeseSelected {
+    background-color: var(--wayFinding);
+    color: var(--font-dark);
 }
 
 /* ==================== CHEESE CARDS ==================== */

@@ -1,7 +1,8 @@
 export const cheeses = [
     {
         "name": "Cheddar",
-        "image": "images/cheese.webp",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "A versatile semi-hard cheese originating from England, now produced worldwide. Available in mild to extra-sharp varieties based on aging.",
         "flavor": "Mild versions are creamy and buttery with slight tang; aged versions are sharp, nutty, and earthy with possible crunchy crystals.",
         "color": "Naturally creamy white to pale yellow; often bright orange with annatto.",
@@ -10,6 +11,8 @@ export const cheeses = [
     },
     {
         "name": "Cheese Curds",
+        "type": "curd",
+        "image": "images/calf-white.webp",
         "description": "Fresh, unaged pieces of cheddar curd, popular in the Midwest. Best eaten the day they are made.",
         "flavor": "Mild, milky, slightly salty with a clean fresh tang.",
         "color": "White to pale yellow or orange.",
@@ -18,6 +21,8 @@ export const cheeses = [
     },
     {
         "name": "Jalapeño Cheddar",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "Cheddar infused with diced jalapeño peppers for a spicy kick.",
         "flavor": "Classic cheddar tang and nuttiness combined with bright vegetal heat from jalapeños.",
         "color": "Orange or white base with green pepper flecks.",
@@ -26,6 +31,8 @@ export const cheeses = [
     },
     {
         "name": "Cream Cheese",
+        "type": "cream",
+        "image": "images/calf-white.webp",
         "description": "Soft, fresh high-fat cheese made from milk and cream. Highly spreadable and neutral.",
         "flavor": "Mild, slightly tart with milky sweetness.",
         "color": "Pale white.",
@@ -34,6 +41,8 @@ export const cheeses = [
     },
     {
         "name": "Jalapeño Cream Cheese",
+        "type": "cream",
+        "image": "images/calf-white.webp",
         "description": "Cream cheese blended with jalapeño pieces or flavoring.",
         "flavor": "Creamy mild tang balanced with spicy green pepper notes.",
         "color": "White with green specks.",
@@ -42,6 +51,8 @@ export const cheeses = [
     },
     {
         "name": "Cucumber Dill Cream Cheese",
+        "type": "cream",
+        "image": "images/calf-white.webp",
         "description": "Cream cheese mixed with cucumber, dill, and often garlic for a fresh profile.",
         "flavor": "Cool crisp cucumber, bright herbaceous dill, and subtle garlic tang.",
         "color": "Pale white with greenish tint.",
@@ -50,6 +61,8 @@ export const cheeses = [
     },
     {
         "name": "Dill Cheese Curds",
+        "type": "curd",
+        "image": "images/calf-white.webp",
         "description": "Fresh cheese curds seasoned with dill (often with garlic).",
         "flavor": "Mild squeaky curds with bright herby dill and aromatic garlic.",
         "color": "White to pale yellow with green herb flecks.",
@@ -58,6 +71,8 @@ export const cheeses = [
     },
     {
         "name": "Strawberry Cream Cheese",
+        "type": "cream",
+        "image": "images/calf-white.webp",
         "description": "Cream cheese blended with real or flavored strawberries, creating a sweet fruity spread.",
         "flavor": "Sweet strawberry notes balanced with the mild tang and creaminess of the base cheese.",
         "color": "Pale pink to light red with small fruit pieces.",
@@ -66,6 +81,8 @@ export const cheeses = [
     },
     {
         "name": "Jalapeño Bacon Cream Cheese",
+        "type": "cream",
+        "image": "images/calf-white.webp",
         "description": "Cream cheese combined with jalapeños and crispy bacon bits for a savory-spicy flavor.",
         "flavor": "Smoky bacon richness with spicy jalapeño heat and creamy tang.",
         "color": "White with green pepper flecks and brown bacon bits.",
@@ -74,6 +91,8 @@ export const cheeses = [
     },
     {
         "name": "Garden Vegetable Cream Cheese",
+        "type": "cream",
+        "image": "images/calf-white.webp",
         "description": "Cream cheese mixed with a variety of finely chopped vegetables like carrots, bell peppers, celery, and herbs.",
         "flavor": "Fresh, savory vegetable medley with mild cream cheese tang and herbaceous notes.",
         "color": "White with colorful specks of orange, green, and red vegetables.",
@@ -82,6 +101,8 @@ export const cheeses = [
     },
     {
         "name": "Jalapeño Cheese Curds",
+        "type": "curd",
+        "image": "images/calf-white.webp",
         "description": "Fresh cheddar curds infused with jalapeño peppers for a spicy twist.",
         "flavor": "Mild milky curds with bright jalapeño heat and subtle tang.",
         "color": "White to pale yellow with green pepper pieces.",
@@ -90,6 +111,8 @@ export const cheeses = [
     },
     {
         "name": "Mozzarella",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "Italian stretched-curd cheese available fresh or low-moisture.",
         "flavor": "Mild, milky, and slightly tangy-sweet.",
         "color": "Bright white.",
@@ -98,6 +121,8 @@ export const cheeses = [
     },
     {
         "name": "Swiss (Emmental)",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "Alpine-style cheese famous for its holes from gas production.",
         "flavor": "Nutty, sweet, and buttery with mild fruitiness.",
         "color": "Pale yellow.",
@@ -106,6 +131,8 @@ export const cheeses = [
     },
     {
         "name": "Gouda",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "Dutch cheese that can be young or aged, sometimes smoked.",
         "flavor": "Buttery and caramel-sweet when young; nutty and complex when aged.",
         "color": "Yellow to orange.",
@@ -114,6 +141,8 @@ export const cheeses = [
     },
     {
         "name": "Brie",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "Soft-ripened French cheese with edible bloomy rind.",
         "flavor": "Buttery, earthy, and mushroomy; becomes more pungent as it ripens.",
         "color": "White interior with white bloomy rind.",
@@ -122,6 +151,8 @@ export const cheeses = [
     },
     {
         "name": "Blue Cheese",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "Aged with Penicillium mold creating blue veins (e.g., Gorgonzola, Roquefort).",
         "flavor": "Sharp, salty, pungent with tangy and spicy notes.",
         "color": "White/cream with blue-green veins.",
@@ -130,6 +161,8 @@ export const cheeses = [
     },
     {
         "name": "Parmesan (Parmigiano-Reggiano)",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "Hard, long-aged Italian grating cheese with protected status.",
         "flavor": "Nutty, fruity, and deeply umami-rich.",
         "color": "Pale yellow/granular.",
@@ -138,6 +171,8 @@ export const cheeses = [
     },
     {
         "name": "Feta",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "Greek brined cheese traditionally made from sheep or goat milk.",
         "flavor": "Tangy, salty, and briny with milky notes.",
         "color": "Bright white.",
@@ -146,6 +181,8 @@ export const cheeses = [
     },
     {
         "name": "Ricotta",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "Fresh Italian whey cheese, light and versatile.",
         "flavor": "Mild, sweet, and milky with light acidity.",
         "color": "White.",
@@ -154,6 +191,8 @@ export const cheeses = [
     },
     {
         "name": "Provolone",
+        "type": "other",
+        "image": "images/calf-white.webp",
         "description": "Italian stretched-curd cheese, often aged or smoked.",
         "flavor": "Mild and tangy when young; sharper and smokier when aged.",
         "color": "Pale yellow to light brown (smoked).",

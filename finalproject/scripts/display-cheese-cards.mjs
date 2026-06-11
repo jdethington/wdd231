@@ -1,6 +1,7 @@
 // CREATES A CARD TO DISPLAY FOR EACH cheese IN THE LIST RECEIVED
 
 const displayCheeseCard = (cheeses) => {
+    document.querySelector('#cards').innerHTML = "";
     cheeses.forEach((cheese) => {
         const card = document.createElement('div');
         card.setAttribute('class', 'cheeseCard');
