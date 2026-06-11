@@ -55,10 +55,9 @@
 
     --wayFinding: #ffe699;
     --hover-light: #ffcc33;
-}
 
-main {
-    padding-left: .75rem;
+    --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    --box-shadow2: 0 0 50px #333;
 }
 
 /* ====================  BACKGROUND ==================== */
@@ -74,10 +73,11 @@ footer {
     /* text-align: center; */
 }
 
-/* h1 { */
-/* font-family: 'Playfair Display', Georgia, serif; */
-/* color: var(--cream); */
-/* } */
+h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    /* color: var(--cream); */
+    margin: 0.75rem;
+}
 
 /* ==================== HEADER & NAV ==================== */
 header,
@@ -90,7 +90,7 @@ header div {
     /* grid-template-columns: 44px minmax(216px, auto) 44px; */
     grid-template-columns: 44px auto 44px;
     align-items: center;
-    padding: 0.5rem 0 0.5rem 0.75rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
     gap: .5rem;
 }
 
@@ -214,4 +214,82 @@ footer p {
 picture>img {
     width: 100%;
     height: auto;
+}
+
+/* ==================== CHEESE CARDS ==================== */
+#cards {
+    min-height: 500px;
+    display: grid;
+    gap: 0.75rem;
+    margin: 0.75rem;
+}
+
+.cheeseCard {
+    border: 1px solid red;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: var(--background-dark);
+    box-shadow: var(--box-shadow);
+    color: var(--font-light);
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "desc"
+        /* "name desc"
+        "image image" */
+
+    ;
+    animation: fadeIn 1.6s ease forwards;
+}
+
+.cheeseCard h2 {
+    grid-area: name;
+    /* text-align: center; */
+    padding: 1rem;
+}
+
+.cheeseCard img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+}
+
+p.description {
+    grid-area: desc;
+    padding: 1rem;
+}
+
+
+
+
+/* ******************** @keyframes ******************** */
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }

@@ -1,7 +1,24 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 57rem) {
 
     /* 75rem == 1200px */
+    /* 56rem ==  896px*/
+    /* 57rem ==  912px*/
     /* 38rem == 608px */
     /* 35rem == 560px */
 
+    /* ==================== CHEESE CARDS ====================*/
+    #cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cheeseCard {
+        grid-template-areas:
+            "name"
+            "image"
+            "desc"
+    }
+
+    .cheeseCard img {
+        max-width: none;
+    }
 }

@@ -33,4 +33,20 @@
         border: none;
     }
 
+
+    /* ==================== CHEESE CARDS ====================*/
+    .cheeseCard {
+        grid-template-areas:
+            "image name"
+            "image desc"
+        ;
+    }
+
+    .cheeseCard h2 {
+        /* text-align: left; */
+    }
+
+    .cheeseCard img {
+        max-width: 300px;
+    }
 }
