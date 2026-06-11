@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakes LegenDairy Cheese</title>
+    <title>Join Jakes LegenDairy Cheese</title>
     <meta name="description"
         content="Welcome to Jakes LegenDairy Cheese. Find out more about us, what we do, where we will be.">
     <meta name="author" content="Jacob Dwayne Ethington">
@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <!-- <link rel="stylesheet" href="styles/large.css"> -->
+    <link rel="stylesheet" href="styles/large.css">
 
-    <script type="module" src="scripts/navigation.js"></script>
-    <script type="module" src="scripts/footer-date.js"></script>
+    <script type="module" src="scripts/nav-dates.js"></script>
+    <!-- <script type="module" src="scripts/footer-date.js"></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,6 +53,58 @@
     </nav>
 
     <main>
+        <h1>Find out more</h1>
+        <section class="forms">
+            <!-- request newsletter -->
+            <div class="email">
+                <form action="thankyou.html" method="get" class="join-email">
+                    <fieldset>
+                        <legend>Get News Letter</legend>
+                        <label>Email <input type="email" name="email" required autocomplete="email"
+                                placeholder="jake@jakescheese.com"></label>
+                        <input type="submit" value="Send me info!">
+                    </fieldset>
+                </form>
+            </div>
+
+            <!-- Post a review -->
+            <div class="review">
+                <form action="thankyou.html" method="get" class="submit-review">
+                    <fieldset>
+                        <legend>Submit a review</legend>
+                        <label>First Name <input type="text" name="fname" autocomplete="given-name"
+                                title="Your First Name" placeholder="Jakes"></label>
+                        <label>Last Name <input type="text" name="lname" autocomplete="family-name"
+                                title="Your Last Name" placeholder="LegenDairy"></label>
+                        <label>City<input type="text" name="city" autocomplete="address-level2"
+                                title="Where you are from" placeholder="Gilbert"></label>
+                        <label><textarea title="What do you think?" name="review"
+                                placeholder="This is the greatest cheese!🧀😁"></textarea></label>
+                        <input type="submit" value="Post my review!">
+                    </fieldset>
+                </form>
+            </div>
+
+            <!-- Ask a question -->
+            <div class="question">
+                <form action="thankyou.html" method="get" class="submit-question">
+                    <fieldset>
+                        <legend>Ask a question</legend>
+                        <label>First Name <input type="text" name="fname" autocomplete="given-name"
+                                title="Your First Name" placeholder="Jakes"></label>
+                        <label>Last Name <input type="text" name="lname" autocomplete="family-name"
+                                title="Your Last Name" placeholder="LegenDairy"></label>
+                        <label>Email <input type="email" name="email" required autocomplete="email"
+                                placeholder="jake@jakescheese.com"></label>
+                        <label><textarea title="How can we help you?" name="question"
+                                placeholder="Where can I get the greatest cheese!🧀😁"></textarea></label>
+
+                        <input type="submit" value="Get an answer">
+                    </fieldset>
+                </form>
+            </div>
+
+        </section>
 
     </main>
 
