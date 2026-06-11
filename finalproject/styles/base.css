@@ -372,11 +372,6 @@ dialog p {
     margin: 0.75rem;
 }
 
-/* check this */
-form {
-    /* margin: 1rem; */
-}
-
 form label {
     display: block;
     font-size: .8rem;
@@ -437,6 +432,10 @@ form input[type=submit] {
     margin: 2rem 0;
     font-size: 1.2rem;
     width: 100%;
+}
+
+div.no-show {
+    display: none;
 }
 
 /* ******************** @keyframes ******************** */

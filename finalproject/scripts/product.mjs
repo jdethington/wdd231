@@ -3,19 +3,6 @@ import { cheeses } from "../data/cheeses.mjs";
 // console.log(cheeses)
 displayCheeseCard(cheeses);
 
-// const info = 'data/cheeses.json';
-// const cards = document.querySelector('#cards');
-
-// async function getCheeses() {
-//     const response = await fetch(info);
-//     const data = await response.json();
-//     // console.log(data);
-//     displayCheeseCard(data.cheeses)
-// }
-
-// getCheeses();
-
-
 //  --------------------  Cheese Button Selected ------------------------
 const cheeseButton = document.querySelector('.cheeseButton');
 cheeseButton.addEventListener('click', (e) => {

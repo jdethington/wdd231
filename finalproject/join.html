@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <script type="module" src="scripts/nav-dates.js"></script>
+    <script type="module" src="scripts/form-display.js"></script>
     <!-- <script type="module" src="scripts/footer-date.js"></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,14 +56,13 @@
     <main>
         <h1>Find out more</h1>
         <div class="cheeseButton">
-            <button>Newsletter signup</button>
-            <button>Write a review</button>
-            <button>Ask a question</button>
+            <button id="btn-email">Newsletter signup</button>
+            <button id="btn-review">Write a review</button>
+            <button id="btn-question">Ask a question</button>
         </div>
-
         <section class="forms">
             <!-- request newsletter -->
-            <div class="email">
+            <div class="email no-show">
                 <form action="thankyou.html" method="get" class="join-email">
                     <fieldset>
                         <legend>Get News Letter</legend>
@@ -74,7 +74,7 @@
             </div>
 
             <!-- Post a review -->
-            <div class="review">
+            <div class="review no-show">
                 <form action="thankyou.html" method="get" class="submit-review">
                     <fieldset>
                         <legend>Submit a review</legend>
@@ -92,7 +92,7 @@
             </div>
 
             <!-- Ask a question -->
-            <div class="question">
+            <div class="question no-show">
                 <form action="thankyou.html" method="get" class="submit-question">
                     <fieldset>
                         <legend>Ask a question</legend>
