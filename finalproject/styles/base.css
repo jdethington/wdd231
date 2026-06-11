@@ -48,6 +48,7 @@
     --background-dark: #5c3311;
     /* --cream: #F8F1E3; */
     --background-light: #F8F1E3;
+    --background-cheese: #FFCC33;
 
     --border-dark: #6b7280;
     --border-light: #d8dadf;
@@ -228,6 +229,38 @@ footer p {
 picture>img {
     width: 100%;
     height: auto;
+}
+
+/* ==================== PRODUCTS ==================== */
+/* ----- BUTTONS ----- */
+.cheeseChoice>h2 {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.cheeseButton {
+    margin: 1rem .75rem 2rem 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem;
+}
+
+.cheeseButton button {
+    padding: .7rem 1rem;
+    width: 100%;
+    background-color: var(--background-dark);
+    color: var(--font-light);
+    border: 1px solid var(--border-dark);
+    border-radius: .75rem;
+    box-shadow: var(--box-shadow);
+}
+
+.cheeseButton button:hover {
+    cursor: pointer;
+    background-color: var(--background-cheese);
+    color: var(--font-dark);
+    font-weight: bold;
 }
 
 /* ==================== CHEESE CARDS ==================== */

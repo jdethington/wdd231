@@ -33,6 +33,11 @@
         border: none;
     }
 
+    /* ==================== PRODUCTS ==================== */
+    /* ----- BUTTONS ----- */
+    .cheeseButton {
+        flex-wrap: nowrap;
+    }
 
     /* ==================== CHEESE CARDS ====================*/
     .cheeseCard {

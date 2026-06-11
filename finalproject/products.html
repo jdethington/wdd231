@@ -54,20 +54,30 @@
 
     <main>
         <h1>Check out the Cheese!</h1>
-        <!-- Cheese cards  -->
-        <section id="cards"> </section>
-        <!-- modal for more info on cheese -->
-        <dialog id="cheeseData">
-            <div>
-                <h2>CHEESE</h2>
-                <button>X</button>
+        <section class="cheeseChoice">
+            <h2>What do you like?</h2>
+            <div class="cheeseButton">
+                <button class="cheeseSelected" id="all">ALL Cheese</button>
+                <button id="cream">Cream Cheese</button>
+                <button id="curds">Cheese Curds</button>
+                <button id="other">Other Cheese</button>
             </div>
-            <p id="description">Description: </p>
-            <p id="flavor">Flavor: </p>
-            <p id="color">Color: </p>
-            <p id="texture">Texture: </p>
-            <p id="pairing">Pairing: </p>
-        </dialog>
+            <!-- Cheese cards  -->
+            <section id="cards"> </section>
+            <!-- modal for more info on cheese -->
+            <dialog id="cheeseData">
+                <div>
+                    <h2>CHEESE</h2>
+                    <button>X</button>
+                </div>
+                <p id="description">Description: </p>
+                <p id="flavor">Flavor: </p>
+                <p id="color">Color: </p>
+                <p id="texture">Texture: </p>
+                <p id="pairing">Pairing: </p>
+            </dialog>
+        </section>
+
     </main>
 
     <footer>
