@@ -366,6 +366,13 @@ dialog p {
     font-size: 1.2rem;
 }
 
+/* --------------- FORMS --------------- */
+.forms {
+    display: grid;
+    margin: 0.75rem;
+    
+
+}
 
 
 
