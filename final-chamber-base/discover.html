@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Page - Gilbert, Arizona Chamber of Commerce</title>
+    <meta name="description"
+        content="Discovery page for Gilbert, Arizona Chamber of Commerce. Find local businesses in your area.">
+    <meta name="author" content="Jacob Dwayne Ethington">
+    <!-- ******************** Facebook ******************** -->
+    <meta property="og:title" content="Discovery page - Gilbert, Arizona Chamber of Commerce">
+    <meta property="og:description"
+        content="Discovery page for Gilbert, Arizona Chamber of Commerce. Find local businesses in your area.">
+    <meta property="og:image" content="https://jdethington.github.io/wdd231/chamber/images/favicons/favicon.ico">
+    <meta property="og:url" content="https://jdethington.github.io/wdd231/chamber/discovery.html">
+    <!-- ******************** favicon ******************** -->
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <!-- ******************** stylesheets ******************** -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/x-large.css">
+    <!-- ******************** scripts ******************** -->
+    <script type="module" src="scripts/date.js"></script>
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/fun.mjs"></script>
+    <!-- <script type="module" src="scripts/weather.js"></script> -->
+    <!-- <script type="module" src="scripts/spotlight.js"></script> -->
+    <!-- <script type="module" src="scripts/directory.js"></script> -->
+    <!-- ******************** Fonts ******************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="https://jdethington.github.io/wdd231/chamber/"><img src="images/gilbert-logo.svg" alt="Site logo"
+                    height="44" width="44"></a>
+            <span>Gilbert Chamber of Commerce</span>
+            <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
+        </div>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="#">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Discover - Gilbert, Arizona Chamber of Commerce</h1>
+        <div class="lastVisit"> Thanks for checking us out!</div>
+        <div id="allPlaces"></div>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <p><b>Gilbert Chamber of Commerce</b></p>
+                <p>10 S. Gilbert Rd.</p>
+                <p>Gilbert, AZ 85233 </p>
+                <p>info@gilbertcc.org</p>
+                <p>(480) 555-2300</p>
+            </div>
+            <div class="social">
+                <a href="https://github.com/jdethington" target="_blank"><img src="images/socialmedia/github.svg"
+                        alt="github"></a>
+                <a href="https://www.linkedin.com/in/jdethington/" target="_blank"><img
+                        src="images/socialmedia/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.facebook.com/jacob.ethington.50" target="_blank"><img
+                        src="images/socialmedia/facebook.svg" alt="facebook"></a>
+                <a href="https://x.com/home" target="_blank"><img src="images/socialmedia/twitter-x.svg"
+                        alt="twitter-X"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="images/socialmedia/youtube.svg"
+                        alt="youtube"></a>
+            </div>
+            <div class="date">
+                <p><span id="currentYear"> </span> 🐄 Jacob Dwayne Ethington 🐄 Arizona, USA</p>
+                <p><span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

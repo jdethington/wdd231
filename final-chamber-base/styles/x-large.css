@@ -1,0 +1,21 @@
+@media only screen and (min-width: 64rem) {
+
+    /* 56rem == 896px */
+
+    /* ******************** FUN ******************** */
+    #allPlaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #allPlaces div {
+
+        grid-template-areas:
+            "name name"
+            "photo desc"
+            "photo location"
+            "learn learn "
+        ;
+
+    }
+}

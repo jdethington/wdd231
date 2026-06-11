@@ -1,0 +1,103 @@
+@media only screen and (min-width: 35rem) {
+
+    /* 38rem == 608px */
+    /* 35rem == 560px */
+    header div,
+    main,
+    nav,
+    footer>div {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 107px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* ******************** NAVIGATION ******************** */
+    .navigation {
+        display: block;
+        /* padding-left: 10px; */
+        /* border-bottom: solid 1px #eee; */
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .home {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navigation li.current {
+        /* border-bottom-left-radius: 10px; */
+        border-bottom-right-radius: 20px;
+    }
+
+    /* ******************** MAIN ******************** */
+    /* -------------------- HERO -------------------- */
+    .key {
+        bottom: 35px;
+        right: 20px;
+    }
+
+    .events {
+        grid-column: span 2;
+    }
+
+    /* ******************** JOIN ******************** */
+    .join {
+        /* display: grid; */
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    /* ******************** DISCOVER ******************** */
+    #allPlaces>div {
+
+        grid-template-areas:
+            "photo name"
+            "photo desc"
+            "learn location"
+        ;
+    }
+
+    #allPlaces div figure {
+        display: block;
+    }
+
+    #allPlaces div figure img {
+        width: 300px;
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    #allPlaces div img:hover {
+        transform: scale(1.08);
+        filter: brightness(1.1);
+    }
+
+    /* ******************** FOOTER ******************** */
+    footer>div {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .social {
+        padding: 0;
+    }
+
+    @keyframes jump {
+        0% {}
+    }
+}

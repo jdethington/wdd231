@@ -1,0 +1,38 @@
+@media only screen and (min-width: 56rem) {
+
+    /* 56rem == 896px */
+    /* -------------------- HERO -------------------- */
+    .key {
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .home {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .events {
+        grid-column: span 2;
+    }
+
+    .weather img {
+        width: 75px;
+        /* border-radius: 5px; */
+    }
+
+    .weather>div {
+        align-items: flex-start;
+    }
+
+    .spotlight>section:nth-child(3) {
+        display: block;
+    }
+
+    /* ******************** FUN ******************** */
+    /* #allPlaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
+
+}
