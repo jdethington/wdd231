@@ -370,11 +370,74 @@ dialog p {
 .forms {
     display: grid;
     margin: 0.75rem;
-    
-
 }
 
+/* check this */
+form {
+    /* margin: 1rem; */
+}
 
+form label {
+    display: block;
+    font-size: .8rem;
+    color: var(--font-dark);
+    padding: .5rem 0;
+    width: 100%;
+}
+
+fieldset {
+    font-size: .8rem;
+    color: var(--font-color-dark);
+    margin: 1.5rem 0 .2rem 0;
+    /* max-width: 25rem; */
+    border-radius: 8px;
+}
+
+form input[type=text],
+form input[type=email],
+/* form select, */
+form textarea {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid var(--border-dark);
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    /* border-left-color: #555; */
+    font-size: 1rem;
+    color: var(--font-color-dark);
+    width: 100%;
+}
+
+form input:required,
+form textarea:required,
+form select:required {
+    border-left-color: #d70000;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-left-color: var(--hover-light);
+    outline: none;
+}
+
+form input:required:valid,
+form textarea:required:valid,
+form select:required:valid {
+    border-left-color: green;
+}
+
+form input[type=submit] {
+    text-align: center;
+    background-color: var(--backdrop-lightGreen);
+    border-radius: 10px;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    width: 100%;
+}
 
 /* ******************** @keyframes ******************** */
 
