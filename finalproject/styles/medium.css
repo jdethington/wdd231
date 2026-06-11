@@ -42,11 +42,11 @@
         ;
     }
 
-    .cheeseCard h2 {
-        /* text-align: left; */
-    }
-
     .cheeseCard img {
         max-width: 300px;
+    }
+
+    p.description {
+        display: block;
     }
 }

@@ -44,20 +44,32 @@
     --text-dark: #2C2C2C;
 
     /* USED NAMES */
+    /* --earth-brown: #5C3311; */
     --background-dark: #5c3311;
+    /* --cream: #F8F1E3; */
     --background-light: #F8F1E3;
 
     --border-dark: #6b7280;
     --border-light: #d8dadf;
 
+    /* --text-dark: #2C2C2C; */
     --font-dark: #2C2C2C;
+    /* --cream: #F8F1E3; */
     --font-light: #F8F1E3;
 
     --wayFinding: #ffe699;
+    /* --cheese-yellow: #FFCC33; */
     --hover-light: #ffcc33;
 
     --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     --box-shadow2: 0 0 50px #333;
+
+    /* --earth-brown: #5C3311; */
+    --backdrop-dark: #5c3311cc;
+    /* --cream: #F8F1E3; */
+    --backdrop-light: #F8F1E3cc;
+    /* --fresh-green: #6B8E23; */
+    --backdrop-lightGreen: #6b8e23bb;
 }
 
 /* ====================  BACKGROUND ==================== */
@@ -73,7 +85,9 @@ footer {
     /* text-align: center; */
 }
 
-h1 {
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', Georgia, serif;
     /* color: var(--cream); */
     margin: 0.75rem;
@@ -225,7 +239,7 @@ picture>img {
 }
 
 .cheeseCard {
-    border: 1px solid red;
+    border: 1px solid var(--border-dark);
     border-radius: 1rem;
     overflow: hidden;
     background-color: var(--background-dark);
@@ -237,16 +251,19 @@ picture>img {
         "name"
         "image"
         "desc"
-        /* "name desc"
-        "image image" */
-
     ;
     animation: fadeIn 1.6s ease forwards;
 }
 
+.cheeseCard:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
 .cheeseCard h2 {
     grid-area: name;
-    /* text-align: center; */
+    text-align: center;
     padding: 1rem;
 }
 
@@ -259,6 +276,48 @@ picture>img {
 p.description {
     grid-area: desc;
     padding: 1rem;
+    display: none;
+}
+
+/* cheese card modal */
+::backdrop {
+    background-color: var(--backdrop-light);
+    animation: fadeIn 1s ease;
+}
+
+dialog {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    border: var(--border-light);
+    border-radius: 1rem;
+    background-color: var(--fresh-green);
+    box-shadow: 0 0 3rem;
+}
+
+dialog h2 {
+    background-color: var(--background-dark);
+    color: var(--font-light);
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+dialog button {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    padding: .5rem .75rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 18px;
+    background-color: var(--wayFinding);
+    cursor: pointer;
+    animation: spin 1s linear 15s infinite;
+}
+
+dialog p {
+    margin: .75rem;
+    font-size: 1.2rem;
 }
 
 

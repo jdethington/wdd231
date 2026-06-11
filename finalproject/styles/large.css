@@ -21,4 +21,8 @@
     .cheeseCard img {
         max-width: none;
     }
+
+    p.description {
+        display: none;
+    }
 }
