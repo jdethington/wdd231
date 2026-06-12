@@ -63,9 +63,14 @@
         <section class="forms">
             <!-- request newsletter -->
             <div class="email no-show">
-                <form action="thankyou.html" method="get" class="join-email">
+                <form action="thank-you.html" method="get" class="join-email">
                     <fieldset>
                         <legend>Get News Letter</legend>
+                        <label>First Name <input type="text" name="fname" autocomplete="given-name"
+                                title="Your First Name" placeholder="Jakes"></label>
+                        <label>Last Name <input type="text" name="lname" autocomplete="family-name"
+                                title="Your Last Name" placeholder="LegenDairy"></label>
+
                         <label>Email <input type="email" name="email" required autocomplete="email"
                                 placeholder="jake@jakescheese.com"></label>
                         <input type="submit" value="Send me info!">
@@ -75,7 +80,7 @@
 
             <!-- Post a review -->
             <div class="review no-show">
-                <form action="thankyou.html" method="get" class="submit-review">
+                <form action="thank-you.html" method="get" class="submit-review">
                     <fieldset>
                         <legend>Submit a review</legend>
                         <label>First Name <input type="text" name="fname" autocomplete="given-name"
@@ -93,7 +98,7 @@
 
             <!-- Ask a question -->
             <div class="question no-show">
-                <form action="thankyou.html" method="get" class="submit-question">
+                <form action="thank-you.html" method="get" class="submit-question">
                     <fieldset>
                         <legend>Ask a question</legend>
                         <label>First Name <input type="text" name="fname" autocomplete="given-name"
@@ -110,8 +115,10 @@
                 </form>
             </div>
 
+            <div class="market">
+                <img src="images/manny-oct28.webp" alt="next sale">
+            </div>
         </section>
-
     </main>
 
     <footer>

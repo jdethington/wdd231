@@ -368,7 +368,10 @@ dialog p {
 
 /* --------------- FORMS --------------- */
 .forms {
+    /* display: flex; */
+    /* flex-direction: column; */
     display: grid;
+    gap: .75rem;
     margin: 0.75rem;
 }
 
@@ -436,6 +439,18 @@ form input[type=submit] {
 
 div.no-show {
     display: none;
+}
+
+.market {
+    display: flex;
+    justify-content: center;
+}
+
+.market img {
+    width: 100%;
+    max-width: 386px;
+    background-color: var(--background-dark);
+    border-radius: 1rem;
 }
 
 /* ******************** @keyframes ******************** */
