@@ -1,3 +1,13 @@
+// CREATE TIMESTAMP
+function setTimestamp() {
+    const now = new Date();
+    const timestampField = document.getElementById('timestamp');
+    timestampField.value = now.toLocaleDateString('en-US', {
+        year: 'numeric', month: 'long', day: 'numeric',
+        hour: 'numeric', minute: 'numeric', hour12: true
+    })
+}
+setTimestamp();
 
 //  --------------------  Cheese Button Selected ------------------------
 const cheeseButton = document.querySelector('.cheeseButton');
@@ -27,6 +37,8 @@ function hideAllForms() {
     reviewForm.classList.add('no-show');
     questionForm.classList.add('no-show');
 }
+// change section display 1fr => 1fr 1fr
+
 
 // Event listeners
 emailBtn.addEventListener('click', () => {
@@ -43,3 +55,4 @@ questionBtn.addEventListener('click', () => {
     hideAllForms();
     questionForm.classList.remove('no-show');
 });
+

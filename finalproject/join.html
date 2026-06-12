@@ -60,7 +60,7 @@
             <button id="btn-review">Write a review</button>
             <button id="btn-question">Ask a question</button>
         </div>
-        <section class="forms">
+        <section class="forms" id="form">
             <!-- request newsletter -->
             <div class="email no-show">
                 <form action="thank-you.html" method="get" class="join-email">
@@ -75,6 +75,9 @@
                                 placeholder="jake@jakescheese.com"></label>
                         <input type="submit" value="Send me info!">
                     </fieldset>
+                    <!-- HIDDEN TIMESTAMP, newsletter -->
+                    <label><input type="hidden" name="timestamp" value="12:00" id="timestamp"></label>
+                    <label><input type="hidden" name="isNewsletter" value="true" ></label>
                 </form>
             </div>
 
@@ -93,6 +96,9 @@
                                 placeholder="This is the greatest cheese!🧀😁" required></textarea></label>
                         <input type="submit" value="Post my review!">
                     </fieldset>
+                    <!-- HIDDEN TIMESTAMP -->
+                    <label><input type="hidden" name="timestamp" value="12:00" id="timestamp"></label>
+                    <label><input type="hidden" name="review" value="true" id="isReview"></label>
                 </form>
             </div>
 
@@ -112,6 +118,9 @@
 
                         <input type="submit" value="Get an answer">
                     </fieldset>
+                    <!-- HIDDEN TIMESTAMP -->
+                    <label><input type="hidden" name="timestamp" value="12:00" id="timestamp"></label>
+                    <label><input type="hidden" name="question" value="true" id="isQuestion"></label>
                 </form>
             </div>
 

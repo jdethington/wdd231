@@ -1,3 +1,4 @@
+// CREATE TIMESTAMP
 function setTimestamp() {
     const now = new Date();
     const timestampField = document.getElementById('timestamp');

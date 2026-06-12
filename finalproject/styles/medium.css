@@ -50,7 +50,8 @@
     }
 
     .cheeseCard img {
-        max-width: 300px;
+        /* max-width: 300px; */
+        width: 300px;
     }
 
     p.description {
@@ -62,10 +63,9 @@
     }
 
     /* ====================  FORMS ==================== */
-    /* .forms {
-        flex-direction: row;
-        justify-content: space-evenly;
-    } */
+    .pre-forms {
+        grid-template-columns: 1fr;
+    }
 
     .forms {
         display: grid;
@@ -79,8 +79,9 @@
     }
 
     .market img {
-        width: 100%;
-        border-radius: 1rem;
+        /* width: 100%; */
+        height: auto;
+        /* border-radius: 1rem; */
         /* justify-content: center; */
     }
 }
