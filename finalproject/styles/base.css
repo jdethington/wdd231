@@ -53,6 +53,7 @@
     --border-dark: #6b7280;
     --border-dark-full: 1px solid #6b7280;
     --border-light: #d8dadf;
+    --border-light-full: 1px solid #d8dadf;
 
     /* --text-dark: #2C2C2C; */
     --font-dark: #2C2C2C;
@@ -178,6 +179,7 @@ header span {
     color: var(--font-dark);
 }
 
+.social a:hover,
 .navigation a:hover {
     background-color: var(--hover-light);
 }
@@ -195,11 +197,6 @@ footer>div {
 .date {
     /* background-color: var(--background-dark); */
     padding: 0.75rem;
-}
-
-.video a {
-    color: var(--font-light);
-    /* text-decoration: none; */
 }
 
 .social {
@@ -225,10 +222,6 @@ footer>div {
     height: 33px;
 }
 
-.social a:hover {
-    background-color: var(--hover-light);
-}
-
 footer p {
     padding: 5px;
     font-size: small;
@@ -251,10 +244,20 @@ footer p {
     right: 10px;
 }
 
+.video a,
 .key a {
     padding: .85rem;
+    border: var(--border-light-full);
     border-radius: 0.75rem;
     background-color: var(--background-cheese);
+    box-shadow: var(--box-shadow);
+    transition: all 0.5s ease;
+}
+
+.video a:hover,
+.key a:hover {
+    background-color: var(--backdrop-dark);
+    color: var(--font-light);
 }
 
 /* *************** WELCOME *************** */
@@ -315,7 +318,7 @@ footer p {
     width: 100%;
     background-color: var(--background-dark);
     color: var(--font-light);
-    border: 1px solid var(--border-dark);
+    border: 1px solid var(--border-dark-full);
     border-radius: .75rem;
     box-shadow: var(--box-shadow);
 }
@@ -356,6 +359,7 @@ button.cheeseSelected {
         "flavor"
     ;
     animation: fadeIn 0.6s ease forwards;
+    transition: all 0.5s ease;
 }
 
 .cheeseCard:hover {
@@ -398,7 +402,7 @@ dialog {
     margin: auto;
     width: 90%;
     max-width: 600px;
-    border: var(--border-light);
+    border: var(--border-dark-full);
     border-radius: 1rem;
     background-color: var(--fresh-green);
     box-shadow: 0 0 3rem;
@@ -519,7 +523,7 @@ div.no-show {
 
 /* ********** THANK YOU ********** */
 .thankYou {
-    padding: 0 0 0 0.75rem;
+    /* padding: 0 0 0 0.75rem; */
 }
 
 #thankYou {
@@ -557,12 +561,12 @@ div.no-show {
     padding: .75rem 1.5rem;
     font-size: 1.2rem;
     text-align: center;
+    border: var(--border-dark-full);
     border-radius: 10px;
     background-color: var(--backdrop-lightGreen);
 }
 
 .thankYouButton a {
-    /* text-decoration: none; */
     color: var(--background-color-dark);
 }
 
