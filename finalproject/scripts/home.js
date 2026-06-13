@@ -5,17 +5,17 @@ import displayCheeseCard from "./display-cheese-cards.mjs";
 const info = 'data/cheeses.json';
 // console.log(info);
 
-const cards = document.querySelector('#featuredCheese');
+const card = document.querySelector('#card');
 
-async function cheeseFilter(info) {
+async function cheeseFilter(info, number) {
     const response = await fetch(info);
     const data = await response.json();
     let featured = data.cheeses.filter(cheese => cheese.type == 'curd' || cheese.type == 'cream');
     featured = shuffle(featured);
-    displayCheeseCard(featured.slice(0, 1));
+    displayCheeseCard(featured.slice(0, number));
 }
 
-cheeseFilter(info);
+cheeseFilter(info, 3);
 
 function shuffle(array) {
     const arr = [...array];
@@ -28,4 +28,6 @@ function shuffle(array) {
     }
     return arr;
 }
+
+
 

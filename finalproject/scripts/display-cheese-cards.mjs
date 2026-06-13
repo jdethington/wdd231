@@ -20,6 +20,7 @@ const displayCheeseCard = (cheeses) => {
         image.setAttribute('alt', `cheese image`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '500')
+        image.setAttribute('height', '500')
 
         // cheese description
         const description = document.createElement('p');
