@@ -83,7 +83,7 @@ nav {
 
 header,
 footer {
-    background-color: none;
+    background-color: white;
     background: linear-gradient(to right,
             var(--earth-brown) 60%,
             /* var(--primary-100)90%, */
