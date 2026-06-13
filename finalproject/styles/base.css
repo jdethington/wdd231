@@ -83,7 +83,12 @@ nav {
 
 header,
 footer {
-    background: linear-gradient(to right, var(--earth-brown) 60%, var(--cheese-yellow)90%, var(--fresh-green) 100%);
+    background-color: none;
+    background: linear-gradient(to right,
+            var(--earth-brown) 60%,
+            /* var(--primary-100)90%, */
+            var(--accent-0) 100%);
+    /* background: linear-gradient(to right, var(--earth-brown) 60%, var(--cheese-yellow)90%, var(--fresh-green) 100%); */
     color: var(--cream);
     /* text-align: center; */
 }
@@ -314,7 +319,7 @@ footer p {
 }
 
 .cheeseButton button {
-    padding: .7rem 1rem;
+    padding: 0.82rem 1rem;
     width: 100%;
     background-color: var(--background-dark);
     color: var(--font-light);
@@ -434,6 +439,7 @@ dialog p {
 }
 
 /* --------------- FORMS --------------- */
+/* FORM */
 .forms {
     /* display: flex; */
     /* flex-direction: column; */
@@ -464,12 +470,11 @@ form input[type=email],
 form textarea {
     display: block;
     margin: .1rem 0 1rem 0;
-    padding: .3rem;
+    padding: .8rem;
     border: 1px solid var(--border-dark);
-    border-radius: 4px;
-    border-left-width: 5px;
+    border-radius: .75rem;
+    border-left-width: .75rem;
     border-left-color: #555;
-    /* border-left-color: #555; */
     font-size: 1rem;
     color: var(--font-color-dark);
     width: 100%;
@@ -497,7 +502,7 @@ form select:required:valid {
 form input[type=submit] {
     text-align: center;
     background-color: var(--backdrop-lightGreen);
-    border-radius: 10px;
+    border-radius: .75rem;
     padding: .75rem 1.5rem;
     margin: 2rem 0;
     font-size: 1.2rem;
@@ -508,6 +513,7 @@ div.no-show {
     display: none;
 }
 
+/* NEXT MARKET IMG */
 .market {
     display: flex;
     justify-content: center;
@@ -522,9 +528,9 @@ div.no-show {
 }
 
 /* ********** THANK YOU ********** */
-.thankYou {
-    /* padding: 0 0 0 0.75rem; */
-}
+/* .thankYou { */
+/* padding: 0 0 0 0.75rem; */
+/* } */
 
 #thankYou {
     max-width: 400px;
