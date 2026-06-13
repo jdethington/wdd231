@@ -179,16 +179,24 @@ header span {
 /* ******************** FOOTER ******************** */
 footer>div {
     padding: 0.75rem;
-    text-align: center;
+    /* text-align: center; */
+    display: grid;
+    justify-items: center;
 }
 
-footer>div>a {
+.video,
+.social,
+.date {
+    /* background-color: var(--background-dark); */
+    padding: 0.75rem;
+}
+
+.video a {
     color: var(--font-light);
     text-decoration: none;
 }
 
 .social {
-    padding-top: 0.75rem;
     display: flex;
     justify-content: center;
     column-gap: 0.75rem;
@@ -215,13 +223,8 @@ footer>div>a {
     background-color: var(--hover-light);
 }
 
-.date {
-    background-color: var(--background-color-light);
-    padding-top: 1rem;
-}
-
 footer p {
-    padding-bottom: 5px;
+    padding: 5px;
     font-size: small;
 }
 
@@ -292,7 +295,7 @@ button.cheeseSelected {
         "desc"
         "flavor"
     ;
-    animation: fadeIn 1.6s ease forwards;
+    animation: fadeIn 0.6s ease forwards;
 }
 
 .cheeseCard:hover {

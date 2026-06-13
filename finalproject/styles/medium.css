@@ -34,6 +34,13 @@
         border: none;
     }
 
+    /* ******************** FOOTER ******************** */
+    footer>div {
+        /* display: flex; */
+        align-items: center;
+        grid-auto-flow: column;
+    }
+
     /* ==================== PRODUCTS ==================== */
     /* ----- BUTTONS ----- */
     .cheeseButton {
@@ -45,7 +52,7 @@
         grid-template-areas:
             "image name"
             "image desc"
-            " image flavor"
+            "image flavor"
         ;
     }
 
