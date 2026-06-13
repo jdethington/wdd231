@@ -459,8 +459,8 @@ form label {
 fieldset {
     font-size: .8rem;
     color: var(--font-color-dark);
-    margin: 1.5rem 0 .2rem 0;
-    /* max-width: 25rem; */
+    margin: 1rem 0 .5rem 0;
+    max-width: 25rem;
     border-radius: 8px;
 }
 
@@ -517,6 +517,7 @@ div.no-show {
 .market {
     display: flex;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .market img {
