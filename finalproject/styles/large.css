@@ -8,26 +8,27 @@
 
     /* ==================== CHEESE CARDS ====================*/
     #cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .cheeseCard {
-        /* grid-template-columns: 200px 1fr; */
         grid-template-areas:
-            /* "name"
+            "name"
             "image"
             "desc"
-            "flavor" */
-            "name name name"
+            "flavor"
+            /* "name name name"
             "image desc desc"
-            "image flavor flavor"
+            "image flavor flavor" */
 
     }
 
     .cheeseCard img {
+        width: 100%;
         max-width: none;
-        padding-left: 1rem;
-        padding-bottom: 1rem;
+
+        /* padding-left: 1rem;
+        padding-bottom: 1rem; */
     }
 
     /* p.description {

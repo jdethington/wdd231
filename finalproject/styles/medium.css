@@ -41,6 +41,28 @@
         grid-auto-flow: column;
     }
 
+    /* ==================== HOME CARDS ==================== */
+    .cards {
+        display: grid;
+        grid-template-areas:
+            "welcome market"
+            "cheese cheese"
+        ;
+    }
+
+    .welcome {
+        grid-area: welcome;
+    }
+
+    .nMarket {
+        grid-area: market;
+    }
+
+    .cheese {
+        grid-area: cheese;
+    }
+
+
     /* ==================== PRODUCTS ==================== */
     /* ----- BUTTONS ----- */
     .cheeseButton {
