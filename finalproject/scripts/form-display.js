@@ -1,11 +1,16 @@
-// CREATE TIMESTAMP
+// CREATE & SET TIMESTAMP FOR EACH FORM
 function setTimestamp() {
     const now = new Date();
-    const timestampField = document.getElementById('timestamp');
-    timestampField.value = now.toLocaleDateString('en-US', {
+    const timestamp = now.toLocaleDateString('en-US', {
         year: 'numeric', month: 'long', day: 'numeric',
         hour: 'numeric', minute: 'numeric', hour12: true
     })
+    const subscribe = document.getElementById('subscribe-timestamp');
+    subscribe.value = timestamp;
+    const review = document.getElementById('review-timestamp');
+    review.value = timestamp;
+    const question = document.getElementById('question-timestamp');
+    question.value = timestamp;
 }
 setTimestamp();
 
