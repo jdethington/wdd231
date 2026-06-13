@@ -51,6 +51,7 @@
     --background-cheese: #FFCC33;
 
     --border-dark: #6b7280;
+    --border-dark-full: 1px solid #6b7280;
     --border-light: #d8dadf;
 
     /* --text-dark: #2C2C2C; */
@@ -255,6 +256,21 @@ footer p {
     border-radius: 10px;
     background-color: var(--background-cheese);
 }
+
+/* *************** WELCOME *************** */
+/* ---------- HOME CARDS ---------- */
+.homeCard {
+    /* background-color: var(--background-dark); */
+    /* color: var(--font-light); */
+    background-color: var(--background-light);
+    color: var(--font-dark);
+    border: var(--border-dark-full);
+    border-radius: 0.75rem;
+    box-shadow: var(--box-shadow);
+    margin: 0.75rem;
+    padding: 0.75rem;
+}
+
 
 /* ==================== PRODUCTS ==================== */
 /* ----- BUTTONS ----- */
