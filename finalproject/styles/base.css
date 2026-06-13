@@ -260,6 +260,8 @@ footer p {
 /* *************** WELCOME *************** */
 .cards {
     margin: 0.75rem;
+    display: grid;
+    gap: 0.75rem;
 }
 
 /* ---------- HOMEPAGE CARDS ---------- */
