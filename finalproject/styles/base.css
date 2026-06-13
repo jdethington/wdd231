@@ -94,6 +94,11 @@ h3 {
     margin: 0.75rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--font-dark);
+}
+
 /* ==================== HEADER & NAV ==================== */
 /* header,
 footer {
@@ -160,8 +165,8 @@ header span {
     text-align: center;
     display: block;
     padding: .75rem 0.75rem;
-    color: var(--font-dark);
-    text-decoration: none;
+    /* color: var(--font-dark); */
+    /* text-decoration: none; */
     font-size: large;
     border-bottom: solid 1px var(--border-light);
     transition: background-color 0.5s ease;
@@ -193,7 +198,7 @@ footer>div {
 
 .video a {
     color: var(--font-light);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .social {
@@ -228,10 +233,27 @@ footer p {
     font-size: small;
 }
 
-/* ==================== HERO ==================== */
-picture>img {
+/* ==================== HOME ==================== */
+/* *************** HERO *************** */
+.hero {
+    position: relative;
+}
+
+.hero img {
     width: 100%;
     height: auto;
+}
+
+.key {
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+}
+
+.key a {
+    padding: .85rem;
+    border-radius: 10px;
+    background-color: var(--background-cheese);
 }
 
 /* ==================== PRODUCTS ==================== */
@@ -502,7 +524,7 @@ div.no-show {
 }
 
 .thankYouButton a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: var(--background-color-dark);
 }
 
