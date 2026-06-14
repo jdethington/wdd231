@@ -1,7 +1,8 @@
-import { cheeses } from "../data/cheeses.mjs";
+// import { cheeses } from "../data/cheeses.mjs";
 import displayCheeseCard from "./display-cheese-cards.mjs";
 // import { cheeses } from "../data/cheeses.mjs";
 // console.log(cheeses);
+
 const info = 'data/cheeses.json';
 // console.log(info);
 
@@ -10,7 +11,8 @@ const card = document.querySelector('#card');
 async function cheeseFilter(info, number) {
     const response = await fetch(info);
     const data = await response.json();
-    let featured = data.cheeses.filter(cheese => cheese.type == 'curd' || cheese.type == 'cream');
+    let featured = data.cheeses.filter(cheese => cheese.type == 'cream');
+    // let featured = data.cheeses.filter(cheese => cheese.type == 'curd' || cheese.type == 'cream');
     featured = shuffle(featured);
     displayCheeseCard(featured.slice(0, number));
 }
