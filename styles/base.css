@@ -67,11 +67,14 @@ header span {
 
 .hamburger::before {
     content: "\2630";
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 2.4rem;
 }
 
 .hamburger.show::before {
     content: "\00D7";
+    font-size: 2.4rem;
+
 }
 
 /* ******************** NAVIGATION ******************** */
